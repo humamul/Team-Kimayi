@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kimaye - Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+            background-image: url("https://cdn.shopify.com/s/files/1/0449/5225/6667/files/gray_bg.jpg?v=1600154658");
+        }
+        #topInfo{
+            display: flex;
+            height: 30px;
+            background-color: #437111;
+           justify-content: center;
+           align-items: center;
+            color: white;
+        }
+        #nav{
+            height: 50px;
+            background-color: #eeeeea!important;
+            display: flex;
+           
+        }
+        #leftNav{
+            font-size: 17px;
+           
+        }
+        #leftNav>select{
+            margin-right: 15px;
+        }
+       #nav80{
+           width: 80%;
+           margin: auto;
+           display: flex;
+           justify-content: space-between;
+       }
+       #showNav{
+           width: 66px;
+           border: 0px;
+           border-radius: 5px;
+           background-color: #eeeeea!important;
+       }
+       #learnNav{
+        width: 74px;
+           border: 0px;
+           border-radius: 5px;
+           background-color: #eeeeea!important;
+       }
+       #grow{
+            text-decoration: dashed;
+            color: black;
+            font-size: 15px;
+            
+       }
+       #logoNav{
+           width: 100px;
+           
+       }
+       #rightNav>a>img{
+           height: 20px;
+           margin-left: 14px;
+           border-radius: 15px;
+       }
+      #recommends{
+          
+          margin-top: 50px;
+          margin-bottom: 50px;
+          text-align: center;
+          font-family: 'Oleo Script', cursive;
+      }
+      #recommends>h3>span>img{
+         width: 160px;
+         height: 40px
+      }
+     /* grid` */
+     #grid1{
+        width: 60%;
+        border: px solid;
+        margin: auto;
+        margin-bottom: 40px;
+         display: grid;
+         grid-template-columns: repeat(2,400px);
+         gap: 44px;
+         justify-content: center;
+     }
+     #grid1>div>img{
+        margin-bottom: 20px;
+        border-radius: 20px;
+         width: 100%;
+         box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+     }
+     #grid1>div{
+         text-align: center;
+         overflow: hidden;
+         border-top-left-radius: 20px;
+         border-top-right-radius: 20px;
+     }
+     #grid1>div>img:hover{
+        transform: scale(1.1);
+        transition: transform 1s;
+     }
+     #grid1>div>button{
+        border: 0px;
+        padding: 6px 8px;
+        background-color: #cd171f;
+        color: aliceblue;
+        border-radius: 10px
+     }
+     /* grid2 */
+     #bgGreen{
+        background-image: url('https://cdn.shopify.com/s/files/1/0449/5225/6667/files/yellow_bg.jpg?v=1600154659');
+     
+ 
+     }
+     #grid2{
+         width: 80%;
+         margin: auto;
+         margin-bottom: 40px;
+         display: grid;
+         grid-template-columns: 340px 600px;
+         gap: 40px;
+     }
+     #grid2>div{
+        
+     }
+     #grid2img{
+         width: 100%
+     }
+     #grid2info{
+         margin-top: 30px
+     }
+     #haha{
+        background-image: url("https://cdn.shopify.com/s/files/1/0449/5225/6667/files/white-ribbon.png?v=1599563566");
+        width: 50%;
+        /* border: 1px solid; */
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        margin-bottom: 20px
+        
+     }
+     #haha+button{
+        border: 0px; 
+        border-radius: 20px;
+        padding: 10px 25px
+         
+     }
+     #haha+button:hover{
+         color: white;
+         background-color: gray
+     }
+     #lookin{
+         text-align: center;
+         margin-top: 60px;
+     }
+     #grid3{
+         width: 80%;
+         margin: auto;
+        margin-top: 60px;
+         display: grid;
+         grid-template-columns: repeat(4,1fr);
+         gap: 40px;
+     }
+     #grid3>img{
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        border-radius: 20px; 
+        width: 100%
+         
+     }
+     #grid3>img:hover{
+         opacity: .65;
+         cursor: pointer;
+         background-image: url("https://cdn.shopify.com/static/sample-images/garnished.jpeg?");
+     }
+     #footer{
+        padding-top: 20px; 
+        margin-top: 70px;
+         height: 270px;
+         background-color: #708949
+         
+     }
+     #footer>:first-child{
+         
+        width: 75%;
+         padding-right: 80px;
+         padding-bottom: 15px;
+         margin: auto;
+         margin-top: 10px;
+         display: flex;
+         justify-content: space-between;
+        border-bottom: 1px solid rgb(78, 72, 72)
+     }
+     #useless>div{
+         font-weight: bold;
+     }
+     #useless>div:hover{
+        cursor: pointer;
+        color: #b43238
+     }
+     #media>a>img:hover{
+        transition: transform .3s; 
+        transform: scale(1.1)
+         
+     }
+     #last{
+       border: px solid ;
+       width: 75%;
+         padding-right: 80px;
+         padding-bottom: 15px;
+         margin: auto;
+         margin-top: 10px;
+         display: flex;
+         justify-content: space-between;
+         
+     }
+     #last>img{
+         
+         margin-right: -59px;
+         width: 80px
+         
+     }
+      @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+    </style>
+</head>
+<body>
+    <div id="topInfo">Delivering in Mumbai and Delhi | Same day delivery!</div>
+    <div id="nav">
+
+        <div id="nav80">
+        <div id="leftNav">
+            <!-- <p>Grow <i class="arrow down"></i></p> -->
+            <select name="grow" id="showNav" onchange="showFun()">
+                <option value="default">SHOP</option>
+                <option value="ALL FRUITS">ALL FRUITS</option>
+                <option value="FRUIT COMBOS">FRUIT COMBOS</option>
+                <option value="GIFTS BY KIMAYE">GIFTS BY KIMAYE</option>
+                <option value="GRAPE">GRAPE FAMILY BY KIMAYI</option>
+                <option value="RETURN & REPLACE">RETURN & REPLACEMENT</option>
+                <option value="COMMUNITY BUYING">COMMUNITY BUYING</option>
+            </select>
+           <select name="learn" id="learnNav" onchange="learnfun()">
+               <option value="defaule">LEARN</option>
+              <option value="OUR STORY">OUR STORY</option>
+              <option value="WHY KIMAYE">WHY KIMAYE</option>
+              <option value="TRACEABILITY">TRACEABILITY</option>
+              <option value="BEYOND FRUITS">BEYOND FRUITS</option>
+           </select>
+           <a href="grow.html" id="grow">GROW</a>
+        </div>
+        <div><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/website-logo_400x.png?v=1596288204" id="logoNav"></div>
+        <div id="rightNav">
+            <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/750px-Search_Icon.svg.png?20181016161702" alt=""></a>
+
+            <a href=""><img src="https://cutewallpaper.org/24/person-icon-png-transparent/120323315.jpg" alt=""></a>
+
+            <a href=""><img src="https://i.pinimg.com/originals/95/67/ba/9567bac44b90867dc730858c2c528f01.jpg" alt="" id="cartImage"></a>
+        </div>
+
+        </div>
+    </div>
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href=""><img src="/Team-Kimayi/homepage/images/hp.JPG" class="d-block w-100" alt="..."></a>
+          </div>
+          <div class="carousel-item">
+            <a href=""><img src="/Team-Kimayi/homepage/images/hp2.JPG" class="d-block w-100" alt="..."></a>
+          </div>
+          <div class="carousel-item">
+            <a href=""><img src="/Team-Kimayi/homepage/images/hp3.JPG" class="d-block w-100" alt="..."></a>
+          </div>
+        </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+      <div id="recommends">
+          <h3><span><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/website-logo_400x.png?v=1596288204" alt=""></span> RECOMMENDS</h3>
+          <p>A Handpicked and Curated Fruit offering</p>
+      </div>
+<!-- grid 1 -->
+<div id="grid1">
+    <div>
+        <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/collections/recommended-1-min_570x.png?v=1614338437" alt="">
+        <h3>ALL FRUITS</h3>
+        <P>Pick and choose from a wide range of delicious fruits</P>
+        <button onclick="allFruits()">Shop Now</button>
+    </div>
+    <div>
+        <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/collections/recommended-3-min_570x.png?v=1614338730" alt="">
+        <h3>FRESH CUTS</h3>
+        <P>We want to spoon-feed you… quite literally</P>
+        <button onclick="freshCuts()">Shop Now</button>
+    </div>
+    <div>
+        <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/collections/recommended-2-min_570x.jpg?v=1614339080" alt="">
+        <h3>FRUIT COMBOS</h3>
+        <P>Indulge in fruit combinations created by us</P>
+        <button onclick="fruitCombos()">Shop Now</button>
+    </div>
+    <div>
+        <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/Untitled_design_6_570x.png?v=1634808861" alt="">
+        <h3>GIFTS BY KIMAYE</h3>
+        <P>Healthy and memorable gifts for your loved ones</P>
+        <button onclick="gifts()">Shop Now</button>
+    </div>
+</div>
+<!-- grid 2 -->
+<div id="bgGreen">
+<div id="grid2">
+    <div><img id="grid2img" src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/kimahi_570x_2db87855-9260-47c2-a80e-3759af77dbea_570x.png?v=1622009438" alt=""></div>
+   <div id="grid2info">
+    <div>
+        <h2>WE’D LIKE TO SAY KIMAHI…<br><br></h2>
+        <p>Many of us share common safety concerns about the food we eat. <br><br> When it comes to fruits, these concerns are even more serious in terms of the way they are grown and handled throughout their farm-to-home journey. We make eating fruits a worry-free and enjoyable experience for you.
+            <br><br>
+            Since 2009, we have set the benchmark for fruit safety and quality in 35 countries. Kimaye is now expanding its footprint in India, bringing you multiple varieties of fruit that are grown, packaged, and delivered in the safest and most socially responsible manner. <br><br></p>
+            <div id="haha">Kimaye is #allSafe#allGood</div>
+            <button>KNOW MORE</button>
+    </div>
+   </div>
+</div>
+
+</div>
+
+<div id="lookin">
+    <h1>PSST… LOOKIN’ FOR US?</h1>
+<p>We are here</p>
+<div id="grid3">
+    <img src="https://scontent.cdninstagram.com/v/t51.29350-15/279877546_410944957186663_3645984651689349100_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=CA65jpLfwDIAX-gO7Nq&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT8iD4N2PTv9hs_4zzmg_rHdp_TR9jpvTlI9TqA6vXWaZw&oe=62772D5A" alt=""><img src="https://scontent.cdninstagram.com/v/t51.29350-15/279584617_402054775098099_8165081373274929559_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=5bWKd45PFs4AX9kNRYL&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT8OgJaWI_tZl8sU37iHF2lbBom2c2LX4ynexY80DqIQzQ&oe=6278BACF" alt=""><img src="https://scontent.cdninstagram.com/v/t51.29350-15/279579352_381593833881713_2956149657746956752_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=wfdaVgs0It0AX9NCucR&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT_22ozvRZ3i5cSYNvg8zFmyhYJqUYlD0ZUwfdX0N2KHlw&oe=62787211" alt=""><img src="https://scontent.cdninstagram.com/v/t51.29350-15/279452424_677986353311129_3143169318889300662_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=wcfbiQVzaxkAX9fV2UT&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT9jjUo0NfL22aMQSDRGPaP07KARWjFmZ6pkirtqhBfkuw&oe=62780A96" alt="">
+</div>
+</div>
+<div id="footer">
+<div>
+    <div id="useless">
+        <div>FAQ's</div>
+        <div>Contact Us</div>
+        <div>Shipping & Return Policy</div>
+        <div>Terms & Conditions</div>
+        <div>Privacy Policy</div>
+    </div>
+   <div> <div>Follow us on</div>
+   <div id="media">
+       <a href=""><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/fb-icon.png?v=1599571756" alt=""></a>
+       
+       <a href=""><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/insta-icon.png?v=1599571756" alt=""></a>
+       
+       <a href=""><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/twitter-icon.png?v=1599571756" alt=""></a>
+   </div></div>
+   
+</div>
+<div id="last">
+    <div>Copyright©2020. All Rights Reserved</div>
+    
+    <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/ting.png?v=1599565040" alt="">
+</div>
+</div>
+</body>
+</html>
+<script>
+
+    function showFun(){
+        if(showNav.value == "ALL FRUITS"){
+            window.location = "HA1";
+        }
+        if(showNav.value == "FRUIT COMBOS"){
+            window.location = "HA2";
+        }
+        if(showNav.value == "GIFTS BY KIMAYE"){
+            window.location = "HA3";
+        }
+        if(showNav.value == "GRAPE"){
+            window.location = "HA4";
+        }
+        if(showNav.value == "RETURN & REPLACE"){
+            window.location = "HA5";
+        }
+        if(showNav.value == "COMMUNITY BUYING"){
+            window.location = "HA6";
+        }
+    }
+    function learnfun(){
+console.log(learnNav.value)
+        if(learnNav.value == "OUR STORY")
+        window.location = "outstory.html"
+        if(learnNav.value == "WHY KIMAYE")
+        window.location = "hawdai.com"
+        if(learnNav.value == "TRACEABILITY")
+        window.location = "hawai.com"
+        if(learnNav.value == "BEYOND FRUITS")
+        window.location = "hawai.com"
+       
+    }
+    function allFruits(){
+        window.location = 'chacha.com'
+    }
+    function freshCuts(){
+        window.location = 'jaja'
+
+    }
+    function fruitCombos(){
+        window.location = 'lala'
+    }
+    function gifts(){
+        window.location= 'kangan'
+    }
+</script>
