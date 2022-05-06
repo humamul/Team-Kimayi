@@ -1,0 +1,108 @@
+#box{
+    height:650px;
+    /* border: #000000 1px solid; */
+    width: 85%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+}
+#sbox{
+    height:90%;
+    width:37%;
+    /* border: purple 1px solid; */
+}
+#img1{
+    height:75%;
+    width:100%;
+    margin-bottom: 4px;
+    /* border: red 1px solid; */
+}
+#card{
+    height: 100%;
+    width: 60%;
+    /* border: green 1px solid; */
+
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+#smlimage{
+    height:20%;
+    width: 100%;
+    /* border:blue 1px solid; */
+    display: flex;
+    justify-content: space-between;
+}
+#smlimage>div{
+    height: 100%;
+    width: 24%;
+    /* border: brown 1px solid; */
+}
+#packimg{
+    height:12%;
+    width: 23%;
+    /* border: goldenrod 1px solid; */
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#cirimg{
+    height: 100%;
+    width:50%;
+    /* border: 1px solid maroon; */
+    border-radius: 55px;
+    
+}
+#cirim{
+    border-radius: 55px;
+}
+h1{
+    color: #222;
+    font-size: 2.34em;
+    letter-spacing: .05em;
+    line-height: 1.02;
+    margin-top: 0;
+}
+#det,#ori{
+    color: #222;
+    font-family: PT Sans,sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    letter-spacing: .02em;
+    line-height: 1.45;
+    font-weight: 400;
+}
+#h2{
+    color: #98cb4c;
+    font-size: 28px;
+    font-family: PT Sans,sans-serif;
+    margin-top: 9%;
+}
+#h5{
+    width: 25%;
+    margin-left: 3%;
+    margin-top: -23px;
+    background-color: #000;
+    color: #fff;
+    visibility: visible;
+    /* top: auto;
+    bottom: 115%;
+    left: 50%; */
+    right: auto
+    
+    
+}
+#bigprice{
+    color: #cd171f;
+    font-weight: 500;
+    font-size: 3.2em;
+}
+#inst>p{
+    font-family: PT Sans, Arial, Helvetica, sans-serif;
+    color: #4c4c4c;
+    font-size: 14px;
+}
+#subins{
+    margin-top: -11px;
+}
