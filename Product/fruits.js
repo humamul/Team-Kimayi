@@ -725,3 +725,4 @@ function myfun(el)
 
 // console.log(cutsArr);
 // localStorage.setItem("freshcuts",JSON.stringify("cutsArr"))
+//hi
