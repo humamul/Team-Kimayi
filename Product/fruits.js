@@ -717,7 +717,7 @@ fruitsData.forEach(function(el){
 })
 function myfun(el)
 {
-     console.log(el);
+     
      localStorage.setItem("product",JSON.stringify(el));
      window.location.href="product.html"
 }
