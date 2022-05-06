@@ -11,10 +11,9 @@
     z-index: 400;
     width: 100%;
     height: 100vh;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s;
 }
 #signup, #login, #forgotPassword{
     background-color: white;
