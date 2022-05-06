@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+    padding: 0;
+}
 #container{
     width:85%;
     margin:auto;
@@ -19,3 +23,54 @@ img{
     height: 80%;
     width: 100%;
 }
+/* footer */
+#footer{
+    padding-top: 20px; 
+    margin-top: 70px;
+     height: 220px;
+     background-color: #708949
+     
+ }
+ #footer>:first-child{
+     
+    width: 75%;
+     padding-right: 80px;
+     padding-bottom: 15px;
+     margin: auto;
+     margin-top: 10px;
+     display: flex;
+     justify-content: space-between;
+    border-bottom: 1px solid rgb(78, 72, 72)
+ }
+ #useless>div{
+     font-weight: bold;
+ }
+ #useless>div:hover{
+    cursor: pointer;
+    color: #b43238
+ }
+ #media>a>img:hover{
+    transition: transform .3s; 
+    transform: scale(1.1)
+     
+ }
+ #media{
+     display: flex;
+ }
+ #last{
+   border: px solid ;
+   width: 75%;
+     padding-right: 80px;
+     padding-bottom: 15px;
+     margin: auto;
+     margin-top: 10px;
+     display: flex;
+     justify-content: space-between;
+     
+ }
+ #last>img{
+     
+     margin-right: -59px;
+     width: 80px
+     
+ }
