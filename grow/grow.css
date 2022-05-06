@@ -2,6 +2,8 @@ body{
     padding: 0px;
     margin: 0px;
     background-image: url("https://cdn.shopify.com/s/files/1/0449/5225/6667/files/gray_bg.jpg?v=1600154658");
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 }
 *::selection{
     background-color: #98CB4C;
@@ -77,6 +79,7 @@ h3{
     position: absolute;
     margin-top: -200px;
     margin-left: 4%;
+    font-family: 'Roboto', sans-serif;
 }
 #h3{
     margin-top: -185px;
@@ -85,7 +88,7 @@ h3{
     background-color: rgb(198, 45, 45);
     color: white;
     font-size: 40px;
-    
+    font-family: 'Roboto', sans-serif;
     position: absolute;
     margin-top: -270px;
     margin-left:4% ;
@@ -97,10 +100,10 @@ h3{
 } 
 #header2>h1,p{
     text-align: center;
-    
+    font-family: 'Roboto', sans-serif;
 }
 a{
-   
+    font-family: 'Roboto', sans-serif;
     text-decoration: none;
 }
 #header3{
@@ -114,6 +117,7 @@ a{
 }
 #header3>div>a{
     color: white;
+    font-family: 'Roboto', sans-serif;
 }
 #header2>p>a{
     color: white;
@@ -211,6 +215,7 @@ box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     
 }#bg2{
     font-size: larger;
+    font-family: 'Roboto', sans-serif;
 }
 input{
 padding: 8px;
@@ -228,6 +233,7 @@ button>a{
 #bg3{
     font-size: larger;
     margin-top: 50px;
+    font-family: 'Roboto', sans-serif;
 }
 #bg4{
     text-align: left;
@@ -236,6 +242,7 @@ button>a{
 #bg5{
 font-size: larger;
 margin-bottom: 30px;
+font-family: 'Roboto', sans-serif;
 }
 #blog2>div{
    
