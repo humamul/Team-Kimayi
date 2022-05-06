@@ -20,7 +20,9 @@ body{
     height: 50px;
     background-color: #eeeeea!important;
     display: flex;
-    
+    z-index: 1000;
+    position: sticky;
+    top: -0.5%;
 }
 #leftNav{
     font-size: 17px;

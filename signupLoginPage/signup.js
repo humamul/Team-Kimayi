@@ -44,10 +44,10 @@ register.addEventListener("click",function(){
 
 let close = document.querySelector("#closeBtn");
 close.addEventListener("click",function(){
-    window.location.href="homePage.html";
+    window.location.href="/Team-Kimayi/homepage/index.html";
 });
 
 let background = document.querySelector("#background");
 background.addEventListener("click",function(){
-    window.location.href="homePage.html";
+    window.location.href="/Team-Kimayi/homepage/index.html";
 });

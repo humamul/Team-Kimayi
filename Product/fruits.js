@@ -612,10 +612,10 @@ var fruitsData=[
 },
 
 ]
-var allfr=document.querySelector("#nav>div:nth-child(1)");
-var fcut=document.querySelector("#nav>div:nth-child(2)");
-var fcombo=document.querySelector("#nav>div:nth-child(3)");
-var fgifts=document.querySelector("#nav>div:nth-child(4)");
+var allfr=document.querySelector("#navi>div:nth-child(1)");
+var fcut=document.querySelector("#navi>div:nth-child(2)");
+var fcombo=document.querySelector("#navi>div:nth-child(3)");
+var fgifts=document.querySelector("#navi>div:nth-child(4)");
 allfr.addEventListener("click",myfun1)
 function myfun1()
 {
@@ -682,6 +682,7 @@ function display(data)
         var parent=document.createElement("div");
         var image=document.createElement("img");
         image.src=el.img_url;
+        image.setAttribute("id","chaman")
         var p=document.createElement("p");
         p.innerText=el.name;
         var h2=document.createElement("h2");
@@ -699,6 +700,7 @@ fruitsData.forEach(function(el){
     var parent=document.createElement("div");
     var image=document.createElement("img");
     image.src=el.img_url;
+    image.setAttribute("id","chaman")
     var p=document.createElement("p");
     p.innerText=el.name;
     p.style.fontFamily="PT Sans"
@@ -722,3 +724,50 @@ function myfun(el)
 
 // console.log(cutsArr);
 // localStorage.setItem("freshcuts",JSON.stringify("cutsArr"))
+
+// humam javascript
+function showFun(){
+    if(showNav.value == "ALL FRUITS"){
+        window.location = "/Team-Kimayi/Product/fruits.html";
+    }
+    if(showNav.value == "FRUIT COMBOS"){
+        window.location = "HA2";
+    }
+    if(showNav.value == "GIFTS BY KIMAYE"){
+        window.location = "HA3";
+    }
+    if(showNav.value == "GRAPE"){
+        window.location = "HA4";
+    }
+    if(showNav.value == "RETURN & REPLACE"){
+        window.location = "HA5";
+    }
+    if(showNav.value == "COMMUNITY BUYING"){
+        window.location = "HA6";
+    }
+}
+function learnfun(){
+console.log(learnNav.value)
+    if(learnNav.value == "OUR STORY")
+    window.location = "/Team-Kimayi/pages/ourstory.html"
+    if(learnNav.value == "WHY KIMAYE")
+    window.location = "/Team-Kimayi/pages/why kiyame.html"
+    if(learnNav.value == "TRACEABILITY")
+    window.location = "hawai.com"
+    if(learnNav.value == "BEYOND FRUITS")
+    window.location = "hawai.com"
+   
+}
+function allFruits(){
+    window.location = '/Team-Kimayi/Product/fruits.html'
+}
+function freshCuts(){
+    window.location = 'jaja'
+
+}
+function fruitCombos(){
+    window.location = 'lala'
+}
+function gifts(){
+    window.location= 'kangan'
+}
