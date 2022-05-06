@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kimaye - Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+       @font-face {
+   font-family: Bitterbrush;
+    src: url(Bitterbrush.otf);
+ }
+*{
+   margin: 0px;
+   padding: 0px;
+   scrollbar-color:RED
+}
+*::selection{
+      background-color: #98cb4c;
+      color: #cd171f;
+   }
+        body{
+            padding: 0px;
+            margin: 0px;
+            background-image: url("https://cdn.shopify.com/s/files/1/0449/5225/6667/files/gray_bg.jpg?v=1600154658");
+        }
+        #topInfo{
+            display: flex;
+            height: 30px;
+            background-color: #437111;
+           justify-content: center;
+           align-items: center;
+            color: white;
+        }
+        #nav{
+            height: 50px;
+            background-color: #eeeeea!important;
+            display: flex;
+           
+        }
+        #leftNav{
+            font-size: 17px;
+           
+        }
+        #leftNav>select{
+            margin-right: 15px;
+        }
+       #nav80{
+           width: 80%;
+           margin: auto;
+           display: flex;
+           justify-content: space-between;
+       }
+       #showNav{
+           width: 66px;
+           border: 0px;
+           border-radius: 5px;
+           background-color: #eeeeea!important;
+       }
+       #learnNav{
+        width: 74px;
+           border: 0px;
+           border-radius: 5px;
+           background-color: #eeeeea!important;
+       }
+       #grow{
+            text-decoration: dashed;
+            color: black;
+            font-size: 15px;
+            
+       }
+       #logoNav{
+           width: 100px;
+           
+       }
+       #rightNav>a>img{
+           height: 20px;
+           margin-left: 14px;
+           border-radius: 15px;
+       }
+      #recommends{
+          
+          margin-top: 50px;
+          margin-bottom: 50px;
+          text-align: center;
+          font-family: 'Oleo Script', cursive;
+      }
+      #recommends>h3>span>img{
+         width: 160px;
+         height: 40px
+      }
+     /* grid` */
+     #grid1{
+        width: 60%;
+        border: px solid;
+        margin: auto;
+        margin-bottom: 40px;
+         display: grid;
+         grid-template-columns: repeat(2,400px);
+         gap: 44px;
+         justify-content: center;
+     }
+     #grid1>div>img{
+        margin-bottom: 20px;
+        border-radius: 20px;
+         width: 100%;
+         box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+     }
+     #grid1>div{
+         text-align: center;
+         overflow: hidden;
+         border-top-left-radius: 20px;
+         border-top-right-radius: 20px;
+     }
+     #grid1>div>img:hover{
+        transform: scale(1.1);
+        transition: transform 1s;
+     }
+     #grid1>div>button{
+        border: 0px;
+        padding: 6px 8px;
+        background-color: #cd171f;
+        color: aliceblue;
+        border-radius: 10px
+     }
+     /* grid2 */
+     #bgGreen{
+        background-image: url('https://cdn.shopify.com/s/files/1/0449/5225/6667/files/yellow_bg.jpg?v=1600154659');
+     
+ 
+     }
+     #grid2{
+         width: 80%;
+         margin: auto;
+         margin-bottom: 40px;
+         display: grid;
+         grid-template-columns: 340px 600px;
+         gap: 40px;
+     }
+     #grid2>div{
+        
+     }
+     #grid2img{
+         width: 100%
+     }
+     #grid2info{
+         margin-top: 30px
+     }
+     #haha{
+        background-image: url("https://cdn.shopify.com/s/files/1/0449/5225/6667/files/white-ribbon.png?v=1599563566");
+        width: 50%;
+        /* border: 1px solid; */
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        margin-bottom: 20px
+        
+     }
+     #haha+button{
+        border: 0px; 
+        border-radius: 20px;
+        padding: 10px 25px
+         
+     }
+     #haha+button:hover{
+         color: white;
+         background-color: gray
+     }
+     #lookin{
+         text-align: center;
+         margin-top: 60px;
+     }
+     #grid3{
+         width: 80%;
+         margin: auto;
+        margin-top: 60px;
+         display: grid;
+         grid-template-columns: repeat(4,1fr);
+         gap: 40px;
+     }
+     #grid3>img{
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        border-radius: 20px; 
+        width: 100%
+         
+     }
+     #grid3>img:hover{
+         opacity: .65;
+         cursor: pointer;
+         background-image: url("https://cdn.shopify.com/static/sample-images/garnished.jpeg?");
+     }
+     #footer{
+        padding-top: 20px; 
+        margin-top: 70px;
+         height: 270px;
+         background-color: #708949
+         
+     }
+     #footer>:first-child{
+         
+        width: 75%;
+         padding-right: 80px;
+         padding-bottom: 15px;
+         margin: auto;
+         margin-top: 10px;
+         display: flex;
+         justify-content: space-between;
+        border-bottom: 1px solid rgb(78, 72, 72)
+     }
+     #useless>div{
+         font-weight: bold;
+     }
+     #useless>div:hover{
+        cursor: pointer;
+        color: #b43238
+     }
+     #media>a>img:hover{
+        transition: transform .3s; 
+        transform: scale(1.1)
+         
+     }
+     #last{
+       border: px solid ;
+       width: 75%;
+         padding-right: 80px;
+         padding-bottom: 15px;
+         margin: auto;
+         margin-top: 10px;
+         display: flex;
+         justify-content: space-between;
+         
+     }
+     #last>img{
+         
+         margin-right: -59px;
+         width: 80px
+         
+     }
+
+      @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
+     #banner{
+        background-image: url("https://cdn.shopify.com/s/files/1/0449/5225/6667/files/why_kimaye_bg.jpg?v=1600179109");
+        padding: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        
+      }
+      #banner>:nth-child(1){
+        width: 40%;
+        left: 40px;
+        position: absolute;
+        padding: 50px;
+     }
+
+     #banner>:nth-child(2){
+        position: absolute;
+        width: 40%;
+        left: 7%;  
+        top: 34%;
+       
+     }
+     #banner>:nth-child(3){
+        position: absolute;
+        width: 45%;
+        right: 50px;   
+       
+     }
+     #banner>:nth-child(4){
+        position: absolute;
+        bottom: 32%;
+        left: 8%;
+        color: white;  
+        font-size: 20px;
+        font-size: Bitterbrush;
+     }
+
+   #banner>div>img{
+      width: 100%;
+   }
+   #banner>h2{
+   font-size: 50px;
+    line-height: 1.4;
+    font-family: Bitterbrush;
+    color: #fff;
+    
+   }
+   #second{
+      margin-top: 80px;
+      width: 100%;
+      position: relative;
+   }
+   #leave{
+      position: absolute;
+      top: -5%;
+      right: 38%;
+   }  
+   #second>h2{
+      font-size: 50px;
+    line-height: 1.4;
+    font-family: Bitterbrush;
+    text-align: center;
+   }
+    
+   #second>p{
+      font-size: 24px;
+    text-align: center;
+    color: #222;
+   }
+   #second>div{
+      display: flex;
+      justify-content: center;
+      width: 40%;
+      margin: auto;
+   }
+   #second>div>img{
+    width: 100%;
+   }
+   .third{
+      margin-top: 50px ;
+      padding: 80px 0px 100px 0px;
+      /* height: 100vh; */
+      background-image: url("https://cdn.shopify.com/s/files/1/0449/5225/6667/files/yellow_bg.png?v=1600179877");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+   }
+
+   .third>div>h2{
+   font-size: 50px;
+    line-height: 1.4;
+    font-family: Bitterbrush;
+    text-align: center;
+   }
+   .third>div>p{
+      font-size: 24px;
+    text-align: center;
+    color: #222;
+   }
+   .third-img{
+      width: 50%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 30px;
+      margin-top: 60px;
+   }
+   .third-img>div{
+      border-radius: 15px;
+
+   }
+   .third-img>div>img{
+      width: 100%;
+   }
+   .third-img>div>p+p{
+      font-family: PT Sans, Arial, Helvetica, sans-serif;
+    color: #4c4c4c;
+    font-size: 12px;
+    overflow: hidden;
+   }
+   .third-img>div>:nth-child(2){
+      font-weight: 600;
+      font-size: 15px;
+      margin-bottom: 15px;
+      line-height: 1.4;
+   }
+   #third-leave{
+       position: absolute;
+       right: 38%;
+       top: 6%;
+   }
+   #fourth{
+      background-image: url("https://cdn.shopify.com/s/files/1/0449/5225/6667/files/title_bg.png?v=1600179108"),url("https://cdn.shopify.com/s/files/1/0449/5225/6667/files/Our-Process-min.png?v=1614336701");
+      background-repeat: no-repeat, no-repeat;
+      background-size: auto,cover;
+      background-position: center bottom 45%;
+   }
+   #fourth>div{
+      height: 800px;
+      display: flex;
+      width: 40%;
+      margin: auto;
+      justify-content: center;
+      border: 1px solid red;
+
+
+   }
+   #fourth>div>img{
+      
+   }
+    </style>
+</head>
+<body>
+    <div id="topInfo">Delivering in Mumbai and Delhi | Same day delivery!</div>
+    <div id="nav">
+
+        <div id="nav80">
+        <div id="leftNav">
+            <!-- <p>Grow <i class="arrow down"></i></p> -->
+            <select name="grow" id="showNav" onchange="showFun()">
+                <option value="default">SHOP</option>
+                <option value="ALL FRUITS">ALL FRUITS</option>
+                <option value="FRUIT COMBOS">FRUIT COMBOS</option>
+                <option value="GIFTS BY KIMAYE">GIFTS BY KIMAYE</option>
+                <option value="GRAPE">GRAPE FAMILY BY KIMAYI</option>
+                <option value="RETURN & REPLACE">RETURN & REPLACEMENT</option>
+                <option value="COMMUNITY BUYING">COMMUNITY BUYING</option>
+            </select>
+           <select name="learn" id="learnNav" onchange="learnfun()">
+               <option value="defaule">LEARN</option>
+              <option value="OUR STORY">OUR STORY</option>
+              <option value="WHY KIMAYE">WHY KIMAYE</option>
+              <option value="TRACEABILITY">TRACEABILITY</option>
+              <option value="BEYOND FRUITS">BEYOND FRUITS</option>
+           </select>
+           <a href="grow.html" id="grow">GROW</a>
+        </div>
+        <div><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/website-logo_400x.png?v=1596288204" id="logoNav"></div>
+        <div id="rightNav">
+            <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/750px-Search_Icon.svg.png?20181016161702" alt=""></a>
+
+            <a href=""><img src="https://cutewallpaper.org/24/person-icon-png-transparent/120323315.jpg" alt=""></a>
+
+            <a href=""><img src="https://i.pinimg.com/originals/95/67/ba/9567bac44b90867dc730858c2c528f01.jpg" alt="" id="cartImage"></a>
+        </div>
+
+        </div>
+    </div>
+<!-- page -->
+ <div id="banner">
+          
+        <div>
+           <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/red-patch.png?v=1600154657" alt="">
+        </div>
+        <h2>Fruit Grown with passion <br><span>And Deliverd with care</span></h2>
+        <div>
+         <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/fruit_box.png?v=1600179109" alt="">
+        </div>
+      
+         <p>Kimaye is synonymous with fruit safety</p>
+     
+   
+ </div>
+<!-- second -->
+   <div id="second">
+      <h2>Every time you eat a Kimaye fruit,</h2>
+      
+      <img id="leave" src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/green-leaves.png?v=1600154657" alt="">
+      <p>we want you to feel free of any worries related to fruit safety and hygiene.</p>
+      <div>
+         <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/girl.png?v=1600179109" alt="">
+      </div>
+   </div>
+   <!-- third -->
+      <div class="third">
+         <img id="third-leave" src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/green-leaves.png?v=1600154657" alt="">
+         <div>
+            <h2>We always deliver</h2>
+             <p>Kimaye stands tall on three essential pillars</p>     
+         </div>
+         <div class="third-img">
+            
+            <div>
+               <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/safety_4664f0b6-22c9-46e4-9552-6eacfe1cc78d.png?v=1600179109" alt="">
+               <p>Saftey</p>
+               <p>We have set stringent standards for all our fruits throughout the entire farm to home journey.</p>
+            </div>
+            <div>
+               <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/technology.png?v=1600179109" alt="">
+               <p>Technology</p>
+               <p>Our innovations enabling 100% product traceability and longer shelf life keeping the fruits fresh.</p>
+            </div>
+            <div>
+               <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/social_impact.png?v=1600179109" alt="">
+               <p>Social Impact</p>
+               <p>We do good for our farmers, create rural jobs, drive gender equality and protect the environment.</p>
+            </div>
+         </div>
+      </div>
+
+
+   <!-- fourth -->
+     <div id="fourth">
+        <div>
+           
+           <p></p>
+        </div>
+     </div>
+   <!-- fifth -->
+
+   <!-- sixth -->
+
+   <!-- seventh -->
+
+
+   <!-- eighth -->
+   
+
+
+<!-- footer -->
+<div id="footer">
+<div>
+    <div id="useless">
+        <div>FAQ's</div>
+        <div>Contact Us</div>
+        <div>Shipping & Return Policy</div>
+        <div>Terms & Conditions</div>
+        <div>Privacy Policy</div>
+    </div>
+   <div> <div>Follow us on</div>
+   <div id="media">
+       <a href=""><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/fb-icon.png?v=1599571756" alt=""></a>
+       
+       <a href=""><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/insta-icon.png?v=1599571756" alt=""></a>
+       
+       <a href=""><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/twitter-icon.png?v=1599571756" alt=""></a>
+   </div></div>
+   
+</div>
+<div id="last">
+    <div>Copyright©2020. All Rights Reserved</div>
+    
+    <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/ting.png?v=1599565040" alt="">
+</div>
+</div>
+<!-- <button>Kimaye Reward</button>
+<i>twitch</i> -->
+</body>
+</html>
+<script>
+
+    function showFun(){
+        if(showNav.value == "ALL FRUITS"){
+            window.location = "HA1";
+        }
+        if(showNav.value == "FRUIT COMBOS"){
+            window.location = "HA2";
+        }
+        if(showNav.value == "GIFTS BY KIMAYE"){
+            window.location = "HA3";
+        }
+        if(showNav.value == "GRAPE"){
+            window.location = "HA4";
+        }
+        if(showNav.value == "RETURN & REPLACE"){
+            window.location = "HA5";
+        }
+        if(showNav.value == "COMMUNITY BUYING"){
+            window.location = "HA6";
+        }
+    }
+    function learnfun(){
+console.log(learnNav.value)
+        if(learnNav.value == "OUR STORY")
+        window.location = "outstory.html"
+        if(learnNav.value == "WHY KIMAYE")
+        window.location = "hawdai.com"
+        if(learnNav.value == "TRACEABILITY")
+        window.location = "hawai.com"
+        if(learnNav.value == "BEYOND FRUITS")
+        window.location = "hawai.com"
+       
+    }
+    function allFruits(){
+        window.location = 'chacha.com'
+    }
+    function freshCuts(){
+        window.location = 'jaja'
+
+    }
+    function fruitCombos(){
+        window.location = 'lala'
+    }
+    function gifts(){
+        window.location= 'kangan'
+    }
+</script>
