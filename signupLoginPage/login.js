@@ -24,12 +24,12 @@ google.addEventListener("click",function(){
 
 let close = document.querySelector("#closeBtn");
 close.addEventListener("click",function(){
-    window.location.href="homePage.html";
+    window.location.href="/Team-Kimayi/homepage/index.html";
 });
 
 let background = document.querySelector("#background");
 background.addEventListener("click",function(){
-    window.location.href="homePage.html";
+    window.location.href="/Team-Kimayi/homepage/index.html";
 });
 
 let signupArr = JSON.parse(localStorage.getItem("signupArr"));
@@ -41,7 +41,7 @@ login.addEventListener("click",function(){
         let password = document.querySelector("#password");
         if(email.value==el.email&&password.value==el.password){
             alert("Login successful!!");
-            window.location.href="homePage.html";
+            window.location.href="/Team-Kimayi/homepage/index.html";
 
         }
         else alert("Please enter valid credentials.");
