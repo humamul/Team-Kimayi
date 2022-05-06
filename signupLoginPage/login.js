@@ -40,8 +40,9 @@ login.addEventListener("click",function(){
         let email = document.querySelector("#email");
         let password = document.querySelector("#password");
         if(email.value==el.email&&password.value==el.password){
-            window.location.href="homePage.html";
             alert("Login successful!!");
+            window.location.href="homePage.html";
+
         }
         else alert("Please enter valid credentials.");
     });

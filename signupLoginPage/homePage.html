@@ -6,29 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kimaye</title>
     <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0449/5225/6667/files/fav_12dcb22d-f3e3-4662-886b-1dae4e60e297_32x.png?v=1598337573" type="image/png">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <style>
         body{
             padding: 0px;
             margin: 0px;
+            background-image: url("https://cdn.shopify.com/s/files/1/0449/5225/6667/files/gray_bg.jpg?v=1600154658");
         }
         #topInfo{
             display: flex;
             height: 30px;
             background-color: #437111;
-           justify-content: center;
-           align-items: center;
+            justify-content: center;
+            align-items: center;
             color: white;
         }
         #nav{
             height: 70px;
-            background-color: #eeeeea!important;
+            background-color: #eeeeea !important;
             display: flex;
-            justify-content: space-between; 
-            /* text-align: center;  */
-            position: sticky; 
+            z-index: 1000;
+            position: sticky;
             top: -0.5%;
-            width: 100%;
+
         }
         #leftNav{
             font-size: 17px;
@@ -70,7 +73,164 @@
            margin-left: 14px;
            border-radius: 15px;
        }
-      
+      #recommends{
+          
+          margin-top: 50px;
+          margin-bottom: 50px;
+          text-align: center;
+          font-family: 'Oleo Script', cursive;
+      }
+      #recommends>h3>span>img{
+         width: 160px;
+         height: 40px
+      }
+     /* grid` */
+     #grid1{
+        width: 60%;
+        border: px solid;
+        margin: auto;
+        margin-bottom: 40px;
+         display: grid;
+         grid-template-columns: repeat(2,400px);
+         gap: 44px;
+         justify-content: center;
+     }
+     #grid1>div>img{
+        margin-bottom: 20px;
+        border-radius: 20px;
+         width: 100%;
+         box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+     }
+     #grid1>div{
+         text-align: center;
+         overflow: hidden;
+         border-top-left-radius: 20px;
+         border-top-right-radius: 20px;
+     }
+     #grid1>div>img:hover{
+        transform: scale(1.1);
+        transition: transform 1s;
+     }
+     #grid1>div>button{
+        border: 0px;
+        padding: 6px 8px;
+        background-color: #cd171f;
+        color: aliceblue;
+        border-radius: 10px
+     }
+     /* grid2 */
+     #bgGreen{
+        background-image: url('https://cdn.shopify.com/s/files/1/0449/5225/6667/files/yellow_bg.jpg?v=1600154659');
+     
+ 
+     }
+     #grid2{
+         width: 80%;
+         margin: auto;
+         margin-bottom: 40px;
+         display: grid;
+         grid-template-columns: 340px 600px;
+         gap: 40px;
+     }
+     #grid2img{
+         width: 100%
+     }
+     #grid2info{
+         margin-top: 30px
+     }
+     #haha{
+        background-image: url("https://cdn.shopify.com/s/files/1/0449/5225/6667/files/white-ribbon.png?v=1599563566");
+        width: 50%;
+        /* border: 1px solid; */
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        margin-bottom: 20px
+        
+     }
+     #haha+button{
+        border: 0px; 
+        border-radius: 20px;
+        padding: 10px 25px
+         
+     }
+     #haha+button:hover{
+         color: white;
+         background-color: gray
+     }
+     #lookin{
+         text-align: center;
+         margin-top: 60px;
+     }
+     #grid3{
+         width: 80%;
+         margin: auto;
+        margin-top: 60px;
+         display: grid;
+         grid-template-columns: repeat(4,1fr);
+         gap: 40px;
+     }
+     #grid3>img{
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        border-radius: 20px; 
+        width: 100%
+         
+     }
+     #grid3>img:hover{
+         opacity: .65;
+         cursor: pointer;
+         background-image: url("https://cdn.shopify.com/static/sample-images/garnished.jpeg?");
+     }
+     #footer{
+        padding-top: 20px; 
+        margin-top: 70px;
+         height: 270px;
+         background-color: #708949
+         
+     }
+     #footer>:first-child{
+         
+        width: 75%;
+         padding-right: 80px;
+         padding-bottom: 15px;
+         margin: auto;
+         margin-top: 10px;
+         display: flex;
+         justify-content: space-between;
+        border-bottom: 1px solid rgb(78, 72, 72)
+     }
+     #useless>div{
+         font-weight: bold;
+     }
+     #useless>div:hover{
+        cursor: pointer;
+        color: #b43238
+     }
+     #media>a>img:hover{
+        transition: transform .3s; 
+        transform: scale(1.1)
+         
+     }
+     #last{
+       border: px solid ;
+       width: 75%;
+         padding-right: 80px;
+         padding-bottom: 15px;
+         margin: auto;
+         margin-top: 10px;
+         display: flex;
+         justify-content: space-between;
+         
+     }
+     #last>img{
+         
+         margin-right: -59px;
+         width: 80px
+         
+     }
+      @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
     </style>
 </head>
 <body>
@@ -80,7 +240,7 @@
         <div id="nav80">
         <div id="leftNav">
             <!-- <p>Grow <i class="arrow down"></i></p> -->
-            <select name="grow" id="showNav">
+            <select name="grow" id="showNav" onchange="showFun()">
                 <option value="default">SHOP</option>
                 <option value="ALL FRUITS">ALL FRUITS</option>
                 <option value="FRUIT COMBOS">FRUIT COMBOS</option>
@@ -89,7 +249,7 @@
                 <option value="RETURN & REPLACE">RETURN & REPLACEMENT</option>
                 <option value="COMMUNITY BUYING">COMMUNITY BUYING</option>
             </select>
-           <select name="learn" id="learnNav">
+           <select name="learn" id="learnNav" onchange="learnfun()">
                <option value="defaule">LEARN</option>
               <option value="OUR STORY">OUR STORY</option>
               <option value="WHY KIMAYE">WHY KIMAYE</option>
@@ -102,88 +262,163 @@
         <div id="rightNav">
             <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/750px-Search_Icon.svg.png?20181016161702" alt=""></a>
 
-            <a href="login.html"><img src="https://cutewallpaper.org/24/person-icon-png-transparent/120323315.jpg" alt=""></a>
+            <a id="loginPage" href="login.html"><img src="https://cutewallpaper.org/24/person-icon-png-transparent/120323315.jpg" alt="Login page link"></a>
 
             <a href=""><img src="https://i.pinimg.com/originals/95/67/ba/9567bac44b90867dc730858c2c528f01.jpg" alt="" id="cartImage"></a>
         </div>
 
         </div>
     </div>
-    <div>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem libero officia facilis eveniet tempora a, inventore incidunt. Earum quaerat laboriosam quos incidunt voluptates, sunt similique error modi corrupti velit impedit!
-        Ab corporis nam incidunt eaque, quo vel illo magni enim explicabo mollitia, accusantium rem, sint consequuntur consequatur id aspernatur quidem laudantium asperiores pariatur fuga non! Quae nesciunt molestias beatae ex.
-        Debitis ipsam fuga vitae dolore blanditiis aperiam, reprehenderit, optio vero ex saepe libero alias autem tempore labore facilis ratione consequatur recusandae? Veniam error veritatis quos tenetur dolorem officiis, molestias dolor.
-        Explicabo odit voluptates tenetur iste dolorem quibusdam aperiam repudiandae odio. Consequatur cupiditate nesciunt nostrum excepturi quis voluptas totam quam quidem est rerum quos incidunt et repellendus ab, magnam aut id.
-        Consequuntur, facilis natus corrupti enim eligendi cumque ipsam eveniet vel distinctio impedit, reprehenderit pariatur delectus necessitatibus eos molestiae? Eius dolores tempora aperiam nesciunt quas cupiditate consectetur harum laborum illum. Velit.
-        Soluta repellat dolore quia quo voluptas hic corporis optio illo natus. Quos quam, minus quasi temporibus ad, impedit repellendus recusandae error sapiente magnam mollitia nemo rerum? Harum tenetur id aliquam.
-        Ad, nulla quam. Et maiores dolorum sit consequatur, eligendi doloremque dolor officia fugit odit. Excepturi pariatur voluptatibus recusandae ipsam ullam, repellendus optio facilis ipsum, quo provident nulla possimus obcaecati illum.
-        Aliquam odio, asperiores quidem vitae tempore reprehenderit tempora tenetur doloribus maiores inventore unde commodi! Tempora nemo id ratione assumenda vel mollitia, libero aperiam, provident perspiciatis in culpa architecto nobis aliquid!
-        Fuga exercitationem ipsa minus ad repellat error ratione et, nulla nam earum? Sunt nisi, eum laborum veritatis quisquam voluptate saepe voluptatem dolores hic nam eius sint mollitia facere repellat error.
-        Accusantium fugit ex mollitia quidem, similique blanditiis dolorum eum atque excepturi nulla placeat alias exercitationem, nobis eligendi vero animi rem. Sed, et distinctio. Enim ab porro, eius assumenda illo ipsa!
-        Rerum hic atque deleniti doloribus quis ipsum, fuga ipsam nisi quos nobis fugit, praesentium tenetur corrupti dicta repudiandae ullam officia nemo suscipit minima, repellat rem et perferendis ipsa laudantium? Delectus.
-        Nam incidunt, nostrum labore accusamus repellendus quisquam culpa corporis. Aliquid reprehenderit ab natus error ea suscipit explicabo minima laudantium sunt rem aliquam, nisi ducimus iure, architecto beatae et quam eos.
-        Impedit maiores praesentium enim a atque voluptatem sunt dignissimos similique? Illum sed necessitatibus culpa nemo similique minima, omnis nam laudantium saepe odio facere, quas est quod eos ratione vel minus?
-        Assumenda explicabo quis voluptatibus, exercitationem natus, ipsam cum nostrum ratione distinctio eaque libero debitis nesciunt enim magni obcaecati. Quae beatae labore ratione? Veniam deserunt, natus exercitationem facere non doloremque assumenda.
-        Eius sit excepturi pariatur dignissimos quisquam, eaque repellat id placeat. Saepe aliquid atque veritatis harum laboriosam magnam soluta dolorum, magni labore, quod modi veniam! Esse saepe inventore excepturi rerum eveniet.
-        Inventore, nisi error dolor deserunt at consequuntur officiis fuga, incidunt repellendus facilis est tempora earum, delectus beatae suscipit corrupti odio quo consequatur eius aperiam hic! Eos sunt quisquam autem in.
-        Cumque blanditiis ipsam ad ab, assumenda, saepe doloribus reiciendis enim eos eum totam nesciunt qui quos facere accusamus recusandae? Sequi facilis culpa sint excepturi aliquam harum ullam reprehenderit similique ad.
-        Reprehenderit vel eum enim, nisi earum dolore. Sint veniam quibusdam velit adipisci, nemo accusamus molestiae accusantium consequatur sit architecto beatae ipsa iusto totam provident saepe aliquam delectus recusandae voluptatum sequi.
-        Aliquam neque harum, temporibus inventore laboriosam recusandae quia vero nihil velit vel veritatis tempora, excepturi deleniti sed pariatur ea. Rerum rem maiores vitae. Impedit fuga dolorum quia laborum aspernatur dolorem.
-        Corporis, nulla obcaecati nemo consectetur, minus assumenda hic iusto blanditiis nam maiores quis nobis aliquid, soluta labore ea recusandae officiis voluptatum et sed! Quod, nobis necessitatibus incidunt vitae iure placeat!
-        Temporibus, rerum, illo assumenda quisquam velit saepe dolor sapiente harum maxime suscipit eius, sequi nulla facilis. Est assumenda nobis quibusdam soluta asperiores ipsam natus debitis, laudantium commodi laborum. Amet, beatae?
-        Ut optio quisquam error maxime dolores blanditiis ipsam quasi tempora veritatis similique vero voluptate sit dolore omnis aut in cupiditate illo, aliquam et exercitationem doloribus deserunt? Illum cupiditate in beatae.
-        Nemo eligendi deleniti ut, vel, itaque assumenda, ex amet molestiae adipisci harum doloribus? Neque officiis illo eligendi ipsum a consequatur quaerat amet error laudantium suscipit odio enim officia, asperiores quod?
-        Soluta sunt suscipit nisi sed ratione repudiandae ullam. Dolor illo molestiae vel quisquam possimus atque rem placeat obcaecati libero tenetur voluptatem commodi saepe ipsam, fugiat repellendus mollitia, architecto voluptatum adipisci.
-        Qui ex autem natus voluptate laudantium iste placeat inventore harum voluptatem deserunt praesentium similique optio, veritatis maiores nostrum dolore sapiente totam quae amet repellendus labore sunt quos. Vitae, id aliquid.
-        Harum numquam deleniti eius a veritatis quo quasi ea esse, dolorem repellendus odit. Ex quia, voluptatibus expedita placeat libero aut officiis pariatur sequi sed molestiae. Alias unde iusto eum exercitationem!
-        Aliquam molestiae distinctio cum beatae, a hic molestias ad at aspernatur vitae eos quos laborum, pariatur obcaecati aperiam voluptas ea dignissimos eaque adipisci minima placeat fuga ipsum maxime. Amet, enim!
-        Numquam, beatae fuga expedita praesentium recusandae quasi mollitia architecto quia dignissimos accusamus quod. Provident, cumque voluptatibus, est nesciunt nemo vitae asperiores quisquam, harum numquam nihil esse debitis iusto et exercitationem?
-        Accusantium dignissimos atque aliquam numquam esse, laudantium facilis, qui aliquid iure voluptas rerum, eius hic debitis itaque corrupti quasi ipsam modi provident! Sapiente ullam optio, et expedita nulla repellat sit?
-        Nostrum praesentium expedita illo, facilis incidunt culpa sint id amet. Dicta magnam, repellat veritatis consequatur corporis quidem nihil voluptates quaerat at labore rerum cupiditate non, excepturi unde facilis officiis incidunt!
-        Libero doloribus veniam voluptatum unde illum natus consequatur pariatur nisi fuga eum eveniet dicta fugiat hic quidem fugit nihil cum explicabo, vitae consequuntur maiores repudiandae quo ducimus? Sunt, aliquid numquam!
-        Dolor possimus sit ab, tempore impedit id voluptates deleniti ipsum sequi sapiente commodi distinctio nesciunt autem libero. Dicta enim, tenetur praesentium deleniti nesciunt quaerat tempora ullam placeat dignissimos libero suscipit?
-        Facilis sed repudiandae voluptas nulla provident veritatis, minima fugit quas. Deserunt et animi doloribus unde culpa error dolorum, veniam eos quae in expedita vel vitae nemo reiciendis rerum dicta modi.
-        Repellat nobis natus omnis nesciunt libero temporibus ab! Dignissimos, soluta? Fugit quia eum vitae dicta minus, autem excepturi illo tempore molestiae? Cumque quos veniam ducimus. Magnam omnis quo voluptates. Sed?
-        Illo exercitationem magni expedita tenetur saepe ut vero deserunt laudantium rerum, consequatur laboriosam repellendus tempore blanditiis id minima? Iure minus adipisci labore aliquid laboriosam, veniam assumenda rem obcaecati reprehenderit voluptas?
-        Nulla corporis numquam et consequuntur, quos quibusdam labore laudantium incidunt? Eum ratione doloribus dolore laborum corporis officiis ut amet expedita, iure quod sequi voluptate reprehenderit laboriosam molestiae repudiandae, quia voluptatibus!
-        Fuga, itaque delectus soluta veritatis nisi recusandae reprehenderit nulla, pariatur molestias rerum laudantium vel cumque minima necessitatibus doloribus atque earum ratione unde? Officia, animi tenetur. Maxime natus excepturi id ea?
-        Asperiores consequatur illum iure dolorum provident consequuntur. Maxime quidem quia, possimus deserunt ex ad, iste mollitia sapiente perferendis laudantium, consequuntur totam. Laudantium ipsum voluptatum dolorem explicabo aspernatur qui quod suscipit!
-        Itaque veritatis doloremque consectetur labore dolor, illo nihil nostrum dignissimos nesciunt corporis! Modi architecto optio non, aliquam, nam, labore eius similique quasi illum odit id delectus. Deleniti iusto itaque enim!
-        Sed nemo officia deleniti ipsum aliquam ducimus quisquam maiores? Ad similique molestias fugiat quidem rerum laudantium blanditiis neque consectetur, animi deserunt expedita enim magni! Tempore hic fugit placeat dolorum non.
-        Adipisci obcaecati consectetur similique magni numquam! Laboriosam aut totam ipsum, enim aliquam consequatur. Cumque cupiditate eius necessitatibus repellendus enim distinctio rem, unde ipsam explicabo quaerat iusto, quisquam magnam atque quae!
-        Qui, earum odit minus illo nostrum dolorum magni reprehenderit voluptatem ullam officiis est, error inventore ipsa, blanditiis delectus voluptatibus veniam vero! Eligendi atque harum molestiae at placeat sit magnam exercitationem!
-        Facilis fuga odio mollitia sit explicabo libero quo, ea tempora culpa, ex ducimus natus error pariatur illum eos, recusandae velit deleniti maiores? Aspernatur neque facilis, aut illum consectetur recusandae dicta!
-        Illo, dolores error vel dolor unde ad voluptate, ullam, magni eligendi corrupti quisquam nostrum? Sed molestiae corporis autem debitis, culpa dignissimos at nisi voluptatem optio tempora tempore voluptate magnam assumenda!
-        Hic nam dolor voluptatem deleniti, fuga, quod voluptatibus laborum fugit repudiandae cupiditate dignissimos suscipit adipisci praesentium! Harum, eius accusantium architecto quas qui amet rem placeat! Harum iste aspernatur magnam reprehenderit.
-        Reprehenderit magni molestias omnis eum vitae consequatur, rem ea ipsa necessitatibus, laboriosam sunt, tenetur repellendus ex perspiciatis ratione accusantium corrupti expedita blanditiis? Itaque, exercitationem eos possimus repudiandae aut magni voluptatibus.
-        Quia assumenda quis possimus est iure eligendi quos velit odit tenetur a vel, corporis unde blanditiis atque inventore maiores cumque ab sapiente delectus. Nobis obcaecati nulla consequatur alias odio debitis?
-        Rem optio adipisci obcaecati minus, consectetur nihil impedit rerum, sunt magnam eveniet dolor dolorem tempore error, excepturi voluptatum architecto! Earum architecto nulla tempora exercitationem nam incidunt eligendi sapiente repellendus? Maxime?
-        Nemo distinctio est voluptatem aliquam nobis repudiandae harum possimus sit ullam iusto? Dolorem ea provident possimus voluptates repellat aspernatur accusamus consectetur dignissimos eaque similique nihil veniam cum, culpa unde quaerat!
-        Iste minus fuga repudiandae optio ut repellendus aliquid totam asperiores pariatur, labore illo similique iure, magni sint eaque. Quas, optio! Ex, voluptatem sequi labore nostrum quod ipsum aperiam. Excepturi, perferendis?
-    </div>
-    
-    <!-- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="/images/hp1.JPG" class="d-block w-100" alt="...">
+            <a href=""><img src="/Team-Kimayi/homepage/images/hp.JPG" class="d-block w-100" alt="..."></a>
           </div>
           <div class="carousel-item">
-            <img src="/images/hp1.JPG" class="d-block w-100" alt="...">
+            <a href=""><img src="/Team-Kimayi/homepage/images/hp2.JPG" class="d-block w-100" alt="..."></a>
           </div>
           <div class="carousel-item">
-            <img src="/images/hp1.JPG" class="d-block w-100" alt="...">
+            <a href=""><img src="/Team-Kimayi/homepage/images/hp3.JPG" class="d-block w-100" alt="..."></a>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script> -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
+      <div id="recommends">
+          <h3><span><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/website-logo_400x.png?v=1596288204" alt=""></span> RECOMMENDS</h3>
+          <p>A Handpicked and Curated Fruit offering</p>
+      </div>
+<!-- grid 1 -->
+<div id="grid1">
+    <div>
+        <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/collections/recommended-1-min_570x.png?v=1614338437" alt="">
+        <h3>ALL FRUITS</h3>
+        <P>Pick and choose from a wide range of delicious fruits</P>
+        <button onclick="allFruits()">Shop Now</button>
+    </div>
+    <div>
+        <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/collections/recommended-3-min_570x.png?v=1614338730" alt="">
+        <h3>FRESH CUTS</h3>
+        <P>We want to spoon-feed you… quite literally</P>
+        <button onclick="freshCuts()">Shop Now</button>
+    </div>
+    <div>
+        <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/collections/recommended-2-min_570x.jpg?v=1614339080" alt="">
+        <h3>FRUIT COMBOS</h3>
+        <P>Indulge in fruit combinations created by us</P>
+        <button onclick="fruitCombos()">Shop Now</button>
+    </div>
+    <div>
+        <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/Untitled_design_6_570x.png?v=1634808861" alt="">
+        <h3>GIFTS BY KIMAYE</h3>
+        <P>Healthy and memorable gifts for your loved ones</P>
+        <button onclick="gifts()">Shop Now</button>
+    </div>
+</div>
+<!-- grid 2 -->
+<div id="bgGreen">
+<div id="grid2">
+    <div><img id="grid2img" src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/kimahi_570x_2db87855-9260-47c2-a80e-3759af77dbea_570x.png?v=1622009438" alt=""></div>
+   <div id="grid2info">
+    <div>
+        <h2>WE’D LIKE TO SAY KIMAHI…<br><br></h2>
+        <p>Many of us share common safety concerns about the food we eat. <br><br> When it comes to fruits, these concerns are even more serious in terms of the way they are grown and handled throughout their farm-to-home journey. We make eating fruits a worry-free and enjoyable experience for you.
+            <br><br>
+            Since 2009, we have set the benchmark for fruit safety and quality in 35 countries. Kimaye is now expanding its footprint in India, bringing you multiple varieties of fruit that are grown, packaged, and delivered in the safest and most socially responsible manner. <br><br></p>
+            <div id="haha">Kimaye is #allSafe#allGood</div>
+            <button>KNOW MORE</button>
+    </div>
+   </div>
+</div>
+
+</div>
+
+<div id="lookin">
+    <h1>PSST… LOOKIN’ FOR US?</h1>
+<p>We are here</p>
+<div id="grid3">
+    <img src="https://scontent.cdninstagram.com/v/t51.29350-15/279877546_410944957186663_3645984651689349100_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=CA65jpLfwDIAX-gO7Nq&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT8iD4N2PTv9hs_4zzmg_rHdp_TR9jpvTlI9TqA6vXWaZw&oe=62772D5A" alt=""><img src="https://scontent.cdninstagram.com/v/t51.29350-15/279584617_402054775098099_8165081373274929559_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=5bWKd45PFs4AX9kNRYL&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT8OgJaWI_tZl8sU37iHF2lbBom2c2LX4ynexY80DqIQzQ&oe=6278BACF" alt=""><img src="https://scontent.cdninstagram.com/v/t51.29350-15/279579352_381593833881713_2956149657746956752_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=wfdaVgs0It0AX9NCucR&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT_22ozvRZ3i5cSYNvg8zFmyhYJqUYlD0ZUwfdX0N2KHlw&oe=62787211" alt=""><img src="https://scontent.cdninstagram.com/v/t51.29350-15/279452424_677986353311129_3143169318889300662_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=8ae9d6&_nc_ohc=wcfbiQVzaxkAX9fV2UT&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT9jjUo0NfL22aMQSDRGPaP07KARWjFmZ6pkirtqhBfkuw&oe=62780A96" alt="">
+</div>
+</div>
+<div id="footer">
+<div>
+    <div id="useless">
+        <div>FAQ's</div>
+        <div>Contact Us</div>
+        <div>Shipping & Return Policy</div>
+        <div>Terms & Conditions</div>
+        <div>Privacy Policy</div>
+    </div>
+   <div> <div>Follow us on</div>
+   <div id="media">
+       <a href=""><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/fb-icon.png?v=1599571756" alt=""></a>
+       
+       <a href=""><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/insta-icon.png?v=1599571756" alt=""></a>
+       
+       <a href=""><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/twitter-icon.png?v=1599571756" alt=""></a>
+   </div></div>
+   
+</div>
+<div id="last">
+    <div>Copyright©2020. All Rights Reserved</div>
+    
+    <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/ting.png?v=1599565040" alt="">
+</div>
+</div>
 </body>
 </html>
+<script>
+
+    function showFun(){
+        if(showNav.value == "ALL FRUITS"){
+            window.location = "HA1";
+        }
+        if(showNav.value == "FRUIT COMBOS"){
+            window.location = "HA2";
+        }
+        if(showNav.value == "GIFTS BY KIMAYE"){
+            window.location = "HA3";
+        }
+        if(showNav.value == "GRAPE"){
+            window.location = "HA4";
+        }
+        if(showNav.value == "RETURN & REPLACE"){
+            window.location = "HA5";
+        }
+        if(showNav.value == "COMMUNITY BUYING"){
+            window.location = "HA6";
+        }
+    }
+    function learnfun(){
+console.log(learnNav.value)
+        if(learnNav.value == "OUR STORY")
+        window.location = "outstory.html"
+        if(learnNav.value == "WHY KIMAYE")
+        window.location = "hawdai.com"
+        if(learnNav.value == "TRACEABILITY")
+        window.location = "hawai.com"
+        if(learnNav.value == "BEYOND FRUITS")
+        window.location = "hawai.com"
+       
+    }
+    function allFruits(){
+        window.location = 'chacha.com'
+    }
+    function freshCuts(){
+        window.location = 'jaja'
+
+    }
+    function fruitCombos(){
+        window.location = 'lala'
+    }
+    function gifts(){
+        window.location= 'kangan'
+    }
+
+    // let loginPage = document.querySelector("#loginPage");
+    // loginPage.addEventListener("click",function(){
+        
+    // });
+</script>
