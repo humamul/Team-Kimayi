@@ -8,6 +8,57 @@
     
 <link rel="stylesheet" href="ourstory.css">
    <style>
+        #nav{
+            width: 100%;
+            text-align: center;
+            z-index: 1000;
+            height: 50px;
+            background-color: #eeeeea!important;
+            display: flex;
+            justify-content: space-between;
+            position: sticky;
+            top: -0.5%;
+        }
+        #leftNav{
+            font-size: 17px;
+           
+        }
+        #leftNav>select{
+            margin-right: 15px;
+        }
+       #nav80{
+           width: 80%;
+           margin: auto;
+           display: flex;
+           justify-content: space-between;
+       }
+       #showNav{
+           width: 66px;
+           border: 0px;
+           border-radius: 5px;
+           background-color: #eeeeea!important;
+       }
+       #learnNav{
+        width: 74px;
+           border: 0px;
+           border-radius: 5px;
+           background-color: #eeeeea!important;
+       }
+       #grow{
+            text-decoration: dashed;
+            color: black;
+            font-size: 15px;
+            
+       }
+       #logoNav{
+           width: 100px;
+           
+       }
+       #rightNav>a>img{
+           height: 20px;
+           margin-left: 14px;
+           border-radius: 15px;
+       }
    @font-face {
    font-family: Bitter;
     src: url(Bitterbrush.otf);
@@ -273,11 +324,93 @@ background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/yel
    
    
 }
-
+  /* footer CSS start */
+  #footer{
+        padding-top: 20px; 
+        margin-top: 70px;
+         height: 220px;
+         background-color: #708949
+         
+     }
+     #footer>:first-child{
+         
+        width: 75%;
+         padding-right: 80px;
+         padding-bottom: 15px;
+         margin: auto;
+         margin-top: 10px;
+         display: flex;
+         justify-content: space-between;
+        border-bottom: 1px solid rgb(78, 72, 72)
+     }
+     #useless>div{
+         font-weight: bold;
+     }
+     #useless>div:hover{
+        cursor: pointer;
+        color: #b43238
+     }
+     #media>a>img:hover{
+        transition: transform .3s; 
+        transform: scale(1.1)
+         
+     }
+     #last{
+       border: px solid ;
+       width: 75%;
+         padding-right: 80px;
+         padding-bottom: 15px;
+         margin: auto;
+         margin-top: 10px;
+         display: flex;
+         justify-content: space-between;
+         
+     }
+     #last>img{
+         
+         margin-right: -59px;
+         width: 80px
+         
+     }
+     /* footer CSS end */
 
    </style>
 </head>
 <body>
+   <div id="nav">
+
+      <div id="nav80">
+      <div id="leftNav">
+          <!-- <p>Grow <i class="arrow down"></i></p> -->
+          <select name="grow" id="showNav" onchange="showFun()">
+              <option value="default">SHOP</option>
+              <option value="ALL FRUITS">ALL FRUITS</option>
+              <option value="FRUIT COMBOS">FRUIT COMBOS</option>
+              <option value="GIFTS BY KIMAYE">GIFTS BY KIMAYE</option>
+              <option value="GRAPE">GRAPE FAMILY BY KIMAYI</option>
+              <option value="RETURN & REPLACE">RETURN & REPLACEMENT</option>
+              <option value="COMMUNITY BUYING">COMMUNITY BUYING</option>
+          </select>
+         <select name="learn" id="learnNav" onchange="learnfun()">
+             <option value="defaule">LEARN</option>
+            <option value="OUR STORY">OUR STORY</option>
+            <option value="WHY KIMAYE">WHY KIMAYE</option>
+            <option value="TRACEABILITY">TRACEABILITY</option>
+            <option value="BEYOND FRUITS">BEYOND FRUITS</option>
+         </select>
+         <a href="grow.html" id="grow">GROW</a>
+      </div>
+      <div><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/website-logo_400x.png?v=1596288204" id="logoNav"></div>
+      <div id="rightNav">
+          <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/750px-Search_Icon.svg.png?20181016161702" alt=""></a>
+
+          <a href=""><img src="https://cutewallpaper.org/24/person-icon-png-transparent/120323315.jpg" alt=""></a>
+
+          <a href=""><img src="https://i.pinimg.com/originals/95/67/ba/9567bac44b90867dc730858c2c528f01.jpg" alt="" id="cartImage"></a>
+      </div>
+
+      </div>
+  </div>
    <div class="banner">
       <img src="image/red-patch.png" alt="" id="red-patch">
       <h1>The Genesis of Kimaye</h1>
@@ -375,5 +508,32 @@ background-image: url(https://cdn.shopify.com/s/files/1/0449/5225/6667/files/yel
 </div>
 </div>
 </div>
+<!--  footer -->
+<div id="footer">
+   <div>
+       <div id="useless">
+           <div>FAQ's</div>
+           <div>Contact Us</div>
+           <div>Shipping & Return Policy</div>
+           <div>Terms & Conditions</div>
+           <div>Privacy Policy</div>
+       </div>
+      <div> <div>Follow us on</div>
+      <div id="media">
+          <a href=""><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/fb-icon.png?v=1599571756" alt=""></a>
+          
+          <a href=""><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/insta-icon.png?v=1599571756" alt=""></a>
+          
+          <a href=""><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/twitter-icon.png?v=1599571756" alt=""></a>
+      </div></div>
+      
+   </div>
+   <div id="last">
+       <div>Copyright©2020. All Rights Reserved</div>
+       
+       <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/ting.png?v=1599565040" alt="">
+   </div>
+   </div>
+   <!-- footer end -->
 </body>
 </html>
