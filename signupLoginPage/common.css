@@ -1,0 +1,384 @@
+/* Common Styles */
+
+#background{
+    content: " ";
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+    /* opacity: 2; */
+    visibility: visible;
+    z-index: 400;
+    width: 100%;
+    height: 100vh;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+#signup, #login, #forgotPassword{
+    background-color: white;
+    width: 25%;
+    padding-bottom: 2%;
+    position: sticky;
+    z-index: 500;
+    margin-left: 76%;
+    margin-top: -1%;
+}
+h3{
+    color: white;
+    font-size: 24px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+a>i:hover{
+    transform : rotate(-45deg);
+}
+span{
+    color: red;
+}
+label{
+    margin-bottom: 3%;
+    font-family: PT Sans, Arial, Helvetica, sans-serif;
+}
+#firstName,#lastName,#email,#password{
+    margin-bottom: 10%;
+    height: 35px;
+}
+button{
+    padding: 4%;
+    width: 100%;
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid black;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 5%;
+}
+button:hover{
+    background-color: black;
+    color: white;
+
+}
+
+
+/* Signup Page */
+
+#signup>div:nth-child(1){
+    background-color: #000;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 20px;
+    padding-top: 15px;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+}
+#signup>div:nth-child(2){
+    color: #FFF;
+    border-color: #2d5073;
+    background-color: #3b5998;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+}
+#signup>div:nth-child(3){
+    color: #FFF;
+    border-color: #c23321;
+    background-color: #dd4b39;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 5%;                                                  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+}
+#signup>div:nth-child(4){
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+#signup>div:nth-child(5){
+    width: 80%;
+    margin: auto;
+    margin-top: 10%;
+}
+#signup hr{
+    width: 80%;
+}
+#signup div>p:nth-child(2){
+    font-weight: 600;
+    margin-bottom: 3%;
+}
+#signup p{
+    font-family: PT Sans, Arial, Helvetica, sans-serif;
+    color: #4c4c4c;
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 3%;
+}
+#signup>div:nth-child(8){
+    width: 20%;
+    margin: auto;
+}
+#signup>div:nth-child(8)>button:hover{
+    background-color: white;
+    color: black;
+}
+#signup img{
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 2%;
+}
+#signup>div:nth-child(7){
+    width: 80%;
+    margin: auto;
+}
+
+
+/* Login Page */
+
+#login>div:nth-child(1){
+    background-color: #000;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 20px;
+    padding-top: 15px;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+}
+#login>div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+#login>div:nth-child(3){
+    width: 80%;
+    margin: auto;
+    display: flex;
+    font-family: PT Sans, Arial, Helvetica, sans-serif;
+    /* font-size: 10px; */
+}
+#login>div:nth-child(3)>img{
+    width: 10%;
+    height: 5%;
+}
+#login>div:nth-child(3)>a{
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+}
+#login>div:nth-child(3)>a:hover{
+    color: greenyellow;
+}
+#login>div:nth-child(4){
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+}
+#login>div:nth-child(5){
+    color: #FFF;
+    border-color: #2d5073;
+    background-color: #3b5998;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+}
+#login>div:nth-child(6){
+    color: #FFF;
+    border-color: #c23321;
+    background-color: #dd4b39;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 5%;                                                  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+}
+#login>div:nth-child(7)>p{
+    font-family: PT Sans, Arial, Helvetica, sans-serif;
+    color: #4c4c4c;
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 3%;
+    font-weight: bold;
+}
+#login>div:nth-child(7)>p+p{
+    font-weight: 400;
+}
+#login>div:nth-child(7)>img{
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 2%;
+}
+#login>div:nth-child(8){
+    width: 40%;
+    margin: auto;
+}
+#login>div:nth-child(8)>button:hover{
+    background-color: white;
+    color: black;
+}
+
+
+/* Forgot Password Main Page */
+
+#forgotPassword>div:nth-child(1){
+    background-color: #000;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 20px;
+    padding-top: 15px;
+    margin-bottom: 5%;
+    flex-wrap: wrap;
+}
+#forgotPassword>div:nth-child(2){
+    color: #FFF;
+    border-color: #2d5073;
+    background-color: #3b5998;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    /* line-height: 40px; */
+}
+#forgotPassword>div:nth-child(3){
+    color: #FFF;
+    border-color: #c23321;
+    background-color: #dd4b39;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 5%;                                                  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    font-family: "Merriweather Sans", sans-serif;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    /* line-height: 40px; */
+}
+#forgotPassword>div:nth-child(4){
+    width: 80%;
+    margin: auto;
+}
+#forgotPassword>div:nth-child(4)>p{
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.8;
+    display: inline;
+    border-bottom: 1px solid #efefef;
+    font-family: PT Sans, Arial, Helvetica, sans-serif;
+    color: #4c4c4c;
+}
+#forgotPassword>div:nth-child(5){
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    margin-top: 5%;
+}
+#forgotPassword>div:nth-child(6){
+    width: 80%;
+    margin: auto;
+}
+#forgotPassword>div:nth-child(7){
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+#forgotPassword>div:nth-child(7)>img{
+    width: 30%;
+    margin-top: 2%;
+}
+#forgotPassword>div:nth-child(7)>p{
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-family: PT Sans, Arial, Helvetica, sans-serif;
+}
+#forgotPassword>div:nth-child(7)>p+p{
+    font-family: PT Sans, Arial, Helvetica, sans-serif;
+    color: #4c4c4c;
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+#forgotPassword>div:last-child{
+    width: 80%;
+    margin: auto;
+}
+#forgotPassword>div:last-child{
+    width: 40%;
+    margin: auto;
+}
+#forgotPassword>div:last-child>button:hover{
+    background-color: white;
+    color: black;
+}
+
+
+/* Forgot Password Subpage 1 */
+
+
+
+
+/* Forgot Password Subpage 1 */
+
