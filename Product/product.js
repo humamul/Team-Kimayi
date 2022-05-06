@@ -22,39 +22,62 @@ p1.innerText=product.details;
 var p2=document.querySelector("#ori");
 p2.innerText=product.origin;
 var h2=document.querySelector("#h2");
-h2.innerText=product.price;
+h2.innerText="₹"+product.price;
 var h5=document.querySelector("#h5");
 h5.innerText=product.pack;
 var cirimg=document.createElement("img");
 cirimg.src=product.simg3;
 cirimg.setAttribute("id","cirim")
 document.querySelector("#cirimg").append(cirimg);
-document.querySelector("#bigprice").innerText=product.price;
+document.querySelector("#bigprice").innerText="₹"+product.price;
 document.querySelector("#subins").innerText=product.ins;
-var smallimg=document.querySelectorAll("#smlimage>div");
-for(var i=0;i<smallimg.length;i++)
-{
-    smallimg[i].addEventListener("click",myfun2)
-}
-function myfun2()
-{
+
+document.querySelector("#smlimage>div:nth-child(1)").addEventListener("click",fun1)
+function fun1(){
     
-    if(i==1)
-    {
-        image.src=product.image1;
-        document.querySelector("#img1").append(image1);
-    }
-    else if(i==2)
-    {
-        image.src=product.image2;
-        document.querySelector("#img1").append(image);
-    }
-    else if(i==3)
-    {
-        document.querySelector("#img1").append(image3);
-    }else if(i==4)
-    {
-        document.querySelector("#img1").append(image4);
-    }
-        
+       image.src=product.img_url;
+       document.querySelector("#img1").append(image);
 }
+document.querySelector("#smlimage>div:nth-child(2)").addEventListener("click",fun2)
+function fun2(){
+         image.src=product.simg2;
+       document.querySelector("#img1").append(image);
+}
+document.querySelector("#smlimage>div:nth-child(3)").addEventListener("click",fun3)
+function fun3(){
+       image.src=product.simg3;
+       document.querySelector("#img1").append(image);
+}
+document.querySelector("#smlimage>div:nth-child(4)").addEventListener("click",fun4)
+function fun4(){
+       image.src=product.simg4;
+       document.querySelector("#img1").append(image);
+}
+// add to card//
+document.querySelector("#quantity>div:nth-child(3)").addEventListener("click",addFun)
+document.querySelector("#quantity>div:nth-child(1)").addEventListener("click",subFun)
+var q = 1;
+function addFun(){
+    document.querySelector("#quantity>div:nth-child(2)").innerText = q
+    q++
+}
+
+function subFun(){
+    document.querySelector("#quantity>div:nth-child(2)").innerText = q
+    q--
+     
+}
+var x = document.querySelector("#quantity>div:nth-child(2)").innerText;
+
+
+//pass 
+var cartArr=JSON.parse(localStorage.getItem("cart"))||[];
+var btn=document.querySelector("#cartBtn");
+btn.addEventListener("click",btnfun)
+function btnfun()
+{
+      cartArr.push(product)
+      console.log(cartArr);
+      localStorage.setItem("cart",JSON.stringify(cartArr))
+}
+

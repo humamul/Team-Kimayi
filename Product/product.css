@@ -106,3 +106,44 @@ h1{
 #subins{
     margin-top: -11px;
 }
+/* // add to card */
+#parent{
+    display: flex;
+
+}
+#quantity{
+background-color: a;
+display: flex;
+border-radius: 5px;
+border: 1px solid;
+width: 50px;
+justify-content: space-around;
+}
+#quantity>div:nth-child(1){
+border-right: 1px solid;
+padding-right: 3px;
+}
+
+#quantity>div:nth-child(3){
+border-left: 1px solid;
+padding-left: 3px;
+
+}
+#quantity>div:nth-child(3):hover{
+cursor: pointer;
+}
+#quantity>div:nth-child(1):hover{
+cursor: pointer;
+}
+#cartBtn:hover{
+color: rgb(241, 102, 102);
+background-color: rgb(13, 1, 1);
+cursor: pointer;
+}
+#cartBtn{
+border-radius: 10px;
+margin-left: 15px;
+border: 0;
+color: white;
+background-color: rgb(99, 94, 94);
+}
