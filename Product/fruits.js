@@ -345,7 +345,7 @@ var fruitsData=[
     pack: "Pack of 2 (0.3-0.4kg)"
 },
 {
-    img_url: "Kimaye Kinnaur Apples (Pack of 5 pc)",
+    img_url: "https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Kinnaur-Apples-funfacts_219x.png?v=1634226809",
     name: "Kimaye Kinnaur Apples (Pack of 5 pc)",
     price: "145",
     type: "solo",
@@ -359,7 +359,7 @@ var fruitsData=[
     pack: "Pack of 5 (1.00 kg)"
 },
 {
-    img_url: "",
+    img_url: "https://cdn.shopify.com/s/files/1/0449/5225/6667/products/Untitleddesign_e3fd397f-415a-4ed4-998b-1efc64fa96e7_219x.progressive.jpg?v=1620127827",
     name: "Kimaye Kesar Mangoes (Pack of 3 & 6)",
     price: "405",
     type: "solo",
@@ -541,7 +541,7 @@ var fruitsData=[
     pack: "Pack Combo"
 },
 {
-    img_url: "Kimaye Summer Combo",
+    img_url: "https://cdn.shopify.com/s/files/1/0449/5225/6667/products/MicrosoftTeams-image_1_540x.jpg?v=1649415923",
     name: "Kimaye Summer Combo",
     price: "477",
     type: "Combos",
@@ -549,9 +549,9 @@ var fruitsData=[
     origin: "THIS COMBO CONTAINS: Watermelon (1 pc), Sapota (6 pcs), Flame Seedless Grapes (500 g), Imported Oranges (3 pcs), Kiwi( 3 pcs)",
     ins: "- Store Watermelon in ambient conditions until ripe. Place ripe/cut melons in the refrigerator.- Store Sapota in ambient condition until ripe. Consume within 1-2 days after ripening. -Store Grapes in refrigerated condition and consume within 4-5 days of delivery. -Store Oranges in refrigerated condition and consume within 4 days of delivery. -Store Cape Gooseberries in refrigerated conditions and consume within 5 days of delivery.",
     img_det: "Great combination of some of the most refreshing fruits from our collection curated specially for you.",
-    simg2: "Kimaye Summer Combo",
-    simg3: "Kimaye Summer Combo",
-    simg4: "Kimaye Summer Combo",
+    simg2: "https://cdn.shopify.com/s/files/1/0449/5225/6667/products/MicrosoftTeams-image_1_540x.jpg?v=1649415923",
+    simg3: "https://cdn.shopify.com/s/files/1/0449/5225/6667/products/MicrosoftTeams-image_1_540x.jpg?v=1649415923",
+    simg4: "https://cdn.shopify.com/s/files/1/0449/5225/6667/products/MicrosoftTeams-image_1_540x.jpg?v=1649415923",
     pack: "Pack Combo"
 },
 {
@@ -684,8 +684,11 @@ function display(data)
         image.src=el.img_url;
         var p=document.createElement("p");
         p.innerText=el.name;
+        p.style.fontFamily="PT Sans"
+        p.style.fontSize="18px"
         var h2=document.createElement("h2");
         h2.innerText="₹"+el.price;
+        h2.style.color="red";
         parent.append(image,p,h2)
         parent.addEventListener("click",function(){
              myfun(el)
