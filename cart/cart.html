@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="cfooter.css">
+</head>
+<body>
+    <div id="topInfo">Delivering in Mumbai and Delhi | Same day delivery!</div>
+    <div id="nav">
+
+        <div id="nav80">
+        <div id="leftNav">
+            <!-- <p>Grow <i class="arrow down"></i></p> -->
+            <select name="grow" id="showNav">
+                <option value="default">SHOP</option>
+                <option value="ALL FRUITS">ALL FRUITS</option>
+                <option value="FRUIT COMBOS">FRUIT COMBOS</option>
+                <option value="GIFTS BY KIMAYE">GIFTS BY KIMAYE</option>
+                <option value="GRAPE">GRAPE FAMILY BY KIMAYI</option>
+                <option value="RETURN & REPLACE">RETURN & REPLACEMENT</option>
+                <option value="COMMUNITY BUYING">COMMUNITY BUYING</option>
+            </select>
+           <select name="learn" id="learnNav">
+               <option value="defaule">LEARN</option>
+              <option value="OUR STORY">OUR STORY</option>
+              <option value="WHY KIMAYE">WHY KIMAYE</option>
+              <option value="TRACEABILITY">TRACEABILITY</option>
+              <option value="BEYOND FRUITS">BEYOND FRUITS</option>
+           </select>
+           <a href="grow.html" id="grow">GROW</a>
+        </div>
+        <div><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/website-logo_400x.png?v=1596288204" id="logoNav"></div>
+        <div id="rightNav">
+            <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/750px-Search_Icon.svg.png?20181016161702" alt=""></a>
+
+            <a href=""><img src="https://cutewallpaper.org/24/person-icon-png-transparent/120323315.jpg" alt=""></a>
+
+            <a href=""><img src="https://i.pinimg.com/originals/95/67/ba/9567bac44b90867dc730858c2c528f01.jpg" alt="" id="cartImage"></a>
+        </div>
+
+        </div>
+    </div>
+    <div id="cdiv">
+            CART
+    </div>
+    <table>
+        <!--  order of columns -->
+        <thead>
+          <tr>
+            <th></th>
+            <th></th>
+            <th>PRODUCT</th>
+            <th>PRICE</th>
+            <th>QUANTITY</th>
+            <th>TOTAL</th>
+           
+          </tr>
+        </thead>
+        <tbody>
+        <!-- Append output to tbody -->
+        </tbody>
+      </table>
+      <div id="cdiv1">
+        <form>
+            <label id="a" for="a">Pick a Delivery Date:</label><br>
+            <input id="b" type="date" /><br>
+            <label id="c"for="d">Choose a time:</label><br>
+            <select name="time" id="d">
+                <option>Select a time</option>
+                <option value="07:00AM-10:00AM">07:00AM-10:00AM</option>
+                <option value="10:00AM-01:00PM">10:00AM-01:00PM</option>
+                <option value="01:00PM-04:00PM">01:00PM-04:00PM</option>
+                <option value="04:00PM-06:00PM">04:00PM-06:00PM</option>
+                <option value="06:00PM-08:00PM">06:00PM-08:00PM</option>
+            </select>   
+        </form> 
+    </div>
+     
+    <div id="cdiv2">
+        <div id="cdiv21">
+            <h2>SPECIAL INSTRUCTIONS</h2>
+            <input id="cd" type="text" placeholder="Give your instruction">
+
+        </div>
+        <div id="cdiv22">
+            <h1>CART TOTALS</h1>
+            <div>
+                <div>Subtotal(in rs):</div>
+                <div id="st">00</div>
+            </div>
+            <div>
+                <div>TOTAL</div>
+                <div id="to">00</div>
+            </div>
+
+
+           
+            <div id="pay"><a href="payment.html">PROCEED TO CHECKOUT</a></div>
+            <div id="pay2"><a href="index.html">CONTINUE SHOPPING</a></div>
+        </div>
+        
+    </div>
+    <div id="footer">
+        <div>
+            <div id="useless">
+                <div>FAQ's</div>
+                <div>Contact Us</div>
+                <div>Shipping & Return Policy</div>
+                <div>Terms & Conditions</div>
+                <div>Privacy Policy</div>
+            </div>
+           <div> <div>Follow us on</div>
+           <div id="media">
+               <a href=""><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/fb-icon.png?v=1599571756" alt=""></a>
+               
+               <a href=""><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/insta-icon.png?v=1599571756" alt=""></a>
+               
+               <a href=""><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/twitter-icon.png?v=1599571756" alt=""></a>
+           </div></div>
+           
+        </div>
+        <div id="last">
+            <div>Copyright©2020. All Rights Reserved</div>
+            
+            <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/ting.png?v=1599565040" alt="">
+        </div>
+        </div>
+</body>
+</html>
+<script>
+     var out=JSON.parse(localStorage.getItem("cart"))||[]
+    out.forEach(function(elem,index) {
+   var tr=document.createElement("tr")
+
+   
+   var td1=document.createElement("button")
+   td1.innerText="Remove"
+   td1.setAttribute("id","but")
+   td1.style.color="red"
+   td1.addEventListener("click",function(){
+     del(elem,index)
+   })
+//    console.log(td1)
+   var td2=document.createElement("td")
+     var pic=document.createElement("img")
+      pic.setAttribute("src",elem.img_url)
+      pic.setAttribute("id","pic")
+      td2.append(pic)
+
+   var td3=document.createElement("td")
+   td3.innerText=elem.name
+   var td4=document.createElement("td")
+   td4.innerText=elem.price
+   var td5=document.createElement("td")
+   td5.innerText="1"
+   var td6=document.createElement("td")
+   td6.innerText=elem.price
+   tr.append(td1,td2,td3,td4,td5,td6)
+   var tbody=document.querySelector("tbody")
+   tbody.append(tr)
+
+   var ctprice= out.reduce(function(sum,elem){
+         return sum + +(elem.price)
+    },0)
+    document.querySelector("#st").innerText=ctprice
+    document.querySelector("#to").innerText=ctprice
+    localStorage.setItem("amount",JSON.stringify(ctprice))
+    });
+
+
+
+    function del(elem,index){
+      out.splice(index,1)
+      localStorage.setItem("cart",JSON.stringify(out))
+      window.location.reload()
+    }
+</script>

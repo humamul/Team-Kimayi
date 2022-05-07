@@ -1,0 +1,202 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-image: url("https://cdn.shopify.com/s/files/1/0449/5225/6667/files/gray_bg.jpg?v=1600154658");
+}
+#topInfo{
+    display: flex;
+    height: 30px;
+    background-color: #437111;
+   justify-content: center;
+   align-items: center;
+    color: white;
+}
+#nav{
+    height: 50px;
+    background-color: #eeeeea!important;
+    display: flex;
+    
+}
+#leftNav{
+    font-size: 17px;
+   
+}
+#leftNav>select{
+    margin-right: 15px;
+}
+#nav80{
+   width: 80%;
+   margin: auto;
+   display: flex;
+   justify-content: space-between;
+}
+#showNav{
+   width: 66px;
+   border: 0px;
+   border-radius: 5px;
+   background-color: #eeeeea!important;
+}
+#learnNav{
+width: 74px;
+   border: 0px;
+   border-radius: 5px;
+   background-color: #eeeeea!important;
+}
+#grow{
+    text-decoration: dashed;
+    color: black;
+    font-size: 15px;
+    
+}
+#logoNav{
+   width: 100px;
+   
+}
+#rightNav>a>img{
+   height: 20px;
+   margin-left: 14px;
+   border-radius: 15px;
+}
+#cdiv{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color: #437111;
+    color: white;
+    font-size: xx-large;
+    justify-content: center;
+    align-items: center;
+}
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    
+  }
+  
+  table td,
+  table th {
+    background-image: url("https://cdn.shopify.com/s/files/1/0449/5225/6667/files/gray_bg.jpg?v=1600154658");
+    padding: 8px;
+    text-align: center;
+    border:1px solid #d6dfce;
+  }
+ 
+ 
+  table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+   
+    color:black;
+    text-align: center;
+  }
+  #cdiv2{
+      height: 420px;
+      width: 65%;
+      margin: auto;
+      margin-top: 30px;
+     display: flex;
+     background-color: white;
+      
+      
+  }
+  #cdiv21{
+    height: 400px;
+    width: 48%;
+    margin: auto;
+   
+    
+  }
+   #cdiv22{
+    height: 400px;
+    width: 48%;
+    margin: auto;
+    
+   
+
+   }
+   #cd{
+       margin-top: 5px;
+       margin-left: 20px;
+       border:1px solid rgb(193, 189, 189);
+       width: 90%;
+       padding-bottom: 120px;
+   }
+ h2{
+     text-align: center;
+ }
+ h1{
+     text-align: center;
+ }
+  #cdiv22>div{
+
+    height: auto;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  #cdiv22>div>div{
+
+    height: 40px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  #pay{
+      
+background-color: #acd77e;
+
+}
+  #pay2{
+background-color: #a7db6e;
+}#pay>a{
+    color: white;
+    text-decoration: none;
+    font-size: x-large;
+    margin-left: 22%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}#pay2>a{
+    color: white;
+    text-decoration: none;
+    font-size: x-large;
+   margin-left: 25%;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+#pay>a:hover{
+    color: red;
+}
+#pay2>a:hover{
+    color: red;
+}
+#cdiv1{
+    height:150px ;
+    width: 12%;
+    margin: auto;
+    margin-top: 100px;
+    
+}
+#b{
+    margin-bottom: 20px;
+    padding:5px 50px 5px 5px ;
+}
+#d{
+    padding: 5px 32px 5px 5px;
+}
+#pic{
+ width: 30%;
+ 
+}
+#but{
+  margin-top:70%
+}
