@@ -93,6 +93,44 @@ h2,p{
      width: 80px
      
  }
+ @media all and (min-width:510px) and (max-width:760px)
+ {
+    #container{
+        width:85%;
+        margin:auto;
+        /* margin-left:90px; */
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        
+        grid-column-gap: 30px;
+        grid-row-gap: 60px;
+    }
+    p{
+        font-size: smaller;
+    }
+    h2{
+        font-weight: 100;
+    }
+ }
+ @media all and (min-width:250px) and (max-width:509px)
+ {
+    #container{
+        width:85%;
+        margin:auto;
+        /* margin-left:90px; */
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        
+        /* grid-column-gap: 30px;
+        grid-row-gap: 30px; */
+    }
+    #tp{
+        font-size: smaller;
+    }
+    h2{
+        font-weight: 100;
+    }
+ }
  /* footer ENd */
  /* nav humam css */
  #topInfo{

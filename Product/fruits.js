@@ -685,11 +685,14 @@ function display(data)
         image.setAttribute("id","chaman")
         var p=document.createElement("p");
         p.innerText=el.name;
+        p.setAttribute("id","tp")
         p.style.fontFamily="PT Sans"
         p.style.fontSize="18px"
+        
         var h2=document.createElement("h2");
         h2.innerText="₹"+el.price;
         h2.style.color="red"
+        h2.setAttribute("id","th2")
         parent.append(image,p,h2)
         parent.addEventListener("click",function(){
              myfun(el)

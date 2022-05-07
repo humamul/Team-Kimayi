@@ -94,6 +94,7 @@ function btnfun()
       
 }
 
+
 // humam edit
 function showFun(){
        if(showNav.value == "ALL FRUITS"){

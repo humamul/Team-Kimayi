@@ -157,7 +157,31 @@ border: 0;
 color: white;
 background-color: rgb(99, 94, 94);
 }
-
+@media all and (max-width:760px)
+{
+    #box{
+        height:auto;
+        /* border: #000000 1px solid; */
+       
+        width: 90%;
+        margin:auto;
+        margin-top: 50px;
+        display: block;
+        /* justify-content: center; */
+        /* justify-content: space-between; */
+    }
+    #sbox{
+        /* height:90%; */
+        width:100%;
+        /* border: purple 1px solid; */
+    }
+    #card{
+        /* height: 100%; */
+        width: 100%;
+        /* border: green 1px solid; */
+    
+    }
+}
 /* nav css  */
 #topInfo{
     display: flex;
@@ -268,3 +292,4 @@ width: 74px;
          
      }
      /* footer CSS end */
+     
