@@ -20,7 +20,7 @@ google.addEventListener("click",function(){
 
 let login = document.querySelector("#signup>div:last-child");
 login.addEventListener("click",function(){
-    window.location.href="login.html";
+    window.location.href="/Team-Kimayi/signupLoginPage/login.html";
 });
 
 let register = document.querySelector("#signup>div:nth-child(5)");
@@ -39,15 +39,15 @@ register.addEventListener("click",function(){
 
     localStorage.setItem("signupArr",JSON.stringify(signupArr));
 
-    window.location.href="login.html";
+    window.location.href="/Team-Kimayi/signupLoginPage/login.html";
 });
 
 let close = document.querySelector("#closeBtn");
 close.addEventListener("click",function(){
-    window.location.href="homePage.html";
+    window.location.href="/Team-Kimayi/homepage/index.html";
 });
 
 let background = document.querySelector("#background");
 background.addEventListener("click",function(){
-    window.location.href="homePage.html";
+    window.location.href="/Team-Kimayi/homepage/index.html";
 });
