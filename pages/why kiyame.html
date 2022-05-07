@@ -385,20 +385,170 @@
       background-repeat: no-repeat, no-repeat;
       background-size: auto,cover;
       background-position: center bottom 45%;
-   }
-   #fourth>div{
-      height: 800px;
-      display: flex;
-      width: 40%;
-      margin: auto;
-      justify-content: center;
-      border: 1px solid red;
-
-
-   }
-   #fourth>div>img{
+      position: relative;
+      height: 100vh;
       
    }
+   /* #fourth>div{
+      
+   } */
+   #fourth>h2{
+      position: absolute;
+      top: 52%;
+      left: 30%;
+      font-size: 40px;
+    line-height: 1.4;
+    font-family: Bitterbrush;
+    color: white;
+ 
+
+   }
+   #fourth>div{
+      display: flex;
+      width: 60%;
+      justify-content: center;
+      position: absolute;
+      bottom: 15%;
+      left: 20%;
+      
+   }
+   #fourth>div>{
+       font-size: 12px;
+       line-height: 1.4;
+   }
+   #fifth{
+       padding: 10px;
+       position: relative;
+       height: 100vh;
+       background-image: url("https://cdn.shopify.com/s/files/1/0449/5225/6667/files/Health-Benefits-Product-Inside2.png?v=1598532578");
+       background-repeat: no-repeat;
+       background-position: bottom 12% center ;
+
+      
+   }
+   #fifth>h2{
+    font-size: 40px;
+    line-height: 1.4;
+    font-family: Bitterbrush;
+    text-align: center;
+    margin-bottom:-8px;
+ 
+   }
+   #fifth>p{
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: #222;
+    margin-bottom: 50px;
+   }
+   #fifth>div{
+       width: 75%;
+       margin: auto;
+   }
+   #fifth>div>img{
+       width: 100%;
+   }
+ 
+   #faltu>h2{
+     position: absolute;
+     font-size: 40px;
+    line-height: 1.4;
+    font-family: Bitterbrush;
+    text-align: center;
+    bottom: 9.5%;
+    right: 40%;
+     color: white;
+   }
+   #faltu>h2+div>p{
+    position: absolute;
+    bottom: 0px;
+    right: 20%;
+    left: 20%;
+     font-size: 15px;
+    line-height: 1.4;
+    
+   }
+   #sixth{
+     background-image: url("https://cdn.shopify.com/s/files/1/0449/5225/6667/files/yellow_bg.jpg?v=1600154659");
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 80vh;
+     position: relative;
+     display: flex;
+   }
+   #sixth>:nth-child(1){
+       display: flex;
+       justify-content: space-evenly;
+       align-items: center;
+       width: 70%;
+       margin: auto;
+       
+       
+       
+   }
+   #sixth>div>:nth-child(1){
+       width: 50%;
+      
+   }
+   #sixth>div>:nth-child(2){
+       width: 40%;
+      
+   }
+   #sixth>div>:nth-child(1)>img{
+       width: 100%;
+       
+   }
+   #sixth>div>:nth-child(2)>h2{
+    font-size: 50px;
+    line-height: 1.4;
+    font-family: Bitterbrush;
+       
+   }
+   #sixth>div>:nth-child(2)>p{
+       
+    font-size: 15px;
+    font-family: PT Sans,sans-serif;
+   }
+   #seventh{
+     padding: 50px 0px 0px 0px;
+   }
+   #seventh>h2{
+       text-align: center;
+       font-size: 50px;
+      line-height: 1.4;
+      font-family: Bitterbrush;
+   }
+  
+   #brand{
+     height: 500px;
+     width: 60%;
+     margin: auto;
+     display: grid;
+     grid-template-columns: repeat(4,1fr);
+     padding: 2%;
+     border-radius: 50px;
+     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+     margin-top: 50px;
+     background-color: rgb(228, 228, 228);
+     gap: 20px;
+     
+
+ }
+ #brand>div{
+     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+     border-radius: 30px;
+     background-color: white;
+     display: flex;
+     align-items: center;
+     
+ }
+ #brand>div>img{
+     width: 100%;
+     border-radius: 20px;
+ }
+
+
+
     </style>
 </head>
 <body>
@@ -492,20 +642,88 @@
 
    <!-- fourth -->
      <div id="fourth">
+        
+        <h2>Our Process Ensure Keep Our promise</h2>
         <div>
-           
-           <p></p>
+            <p>To ensure safety, our products go through multiple quality checks that adhere to global standards. Our supply chain is contamination-free, with minimum handling and maximum hygiene of our produce.
+                We don’t stop there. All our fruits are impeccable storytellers through our 100% traceability feature. Just flip the fruit, and find a QR code affixed to it. Once you scan the code, you will find the entire journey of the fruit from farm to home. You can get to know where your fruit was grown, who was the farmer, and how your fruit reached you. We believe in being 100% transparent with our consumers.</p>
         </div>
+        
      </div>
    <!-- fifth -->
-
-   <!-- sixth -->
-
-   <!-- seventh -->
-
-
-   <!-- eighth -->
+<div id="fifth">
+   <h2>We’ve Made it to the World Map</h2>
+   <p>35 countries | Delivering 40,000 tons of fruit annually</p>
+   <div>
+    <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/map.png?v=1600179108" alt="">
+   </div>
+   <div id="faltu">
+    <h2>Also humblegrag:</h2>
+    <div>
+        <p>We deliver to the most demanding markets in the world including Europe and Middle East and are proud to work directly with most premium retailers. We have achieved extremely high standards thanks to our farmers and stringent process controls. Domestically also we work with major retailers such as Big Bazaar, Foodhall, More, and Star Bazaar in Mumbai, Delhi, Hyderabad, and Bengaluru.</p>
+    </div>
+    
+   </div>
+    
+  
    
+</div>
+   <!-- sixth -->
+   <div id="sixth">
+     <div>
+          <div>
+              <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/words_revised_img.png?v=1600870298" alt="">
+          </div>
+          <div>
+              <h2>We’re Not All Words</h2>
+              <p>Still not convinced? Well, take a sneak peek at our accolades, which will keep you longing for more fruits.</p>
+          </div>
+     </div>
+   </div>
+   <!-- seventh -->
+   <div id="seventh">
+        <h2>The Signs of a Brand You Can Trust</h2>
+        
+        <div id="brand">
+            
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/01.jpg?v=1600179108" alt="">
+            </div>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/02.jpg?v=1600179108" alt="">
+            </div>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/03.jpg?v=1600179108" alt="">
+            </div>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/11.jpg?v=1600179108" alt="">
+            </div>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/04.jpg?v=1600179108" alt="">
+            </div>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/05.jpg?v=1600179108" alt="">
+            </div>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/06.jpg?v=1600179108" alt="">
+            </div>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/07.jpg?v=1600179108" alt="">
+            </div>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/08.jpg?v=1600179108" alt="">
+            </div>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/10.jpg?v=1600179108" alt="">
+            </div>
+            <div>
+                <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/09.jpg?v=1600179108" alt="">
+            </div>
+            </div>
+        </div>
+   
+
+   <!-- button extra -->
 
 
 <!-- footer -->
@@ -534,8 +752,7 @@
     <img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/ting.png?v=1599565040" alt="">
 </div>
 </div>
-<!-- <button>Kimaye Reward</button>
-<i>twitch</i> -->
+
 </body>
 </html>
 <script>
