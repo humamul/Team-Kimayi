@@ -33,6 +33,7 @@ body{
     transform: scale(1.1);
     transition: transform .8s;
 } */
+
 #chaman:hover{
     transform: scale(1.1);
     transition: transform .8s;
@@ -96,7 +97,7 @@ h2,p{
  /* nav humam css */
  #topInfo{
     display: flex;
-    height: 30px;
+    height: 31px;
     background-color: #437111;
    justify-content: center;
    align-items: center;

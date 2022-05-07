@@ -62,7 +62,9 @@ body{
     border-radius: 55px;
     
 }
-#cirim{
+#cirim{  
+    width: 100%;
+    /* border: 1px solid maroon; */
     border-radius: 55px;
 }
 h1{
