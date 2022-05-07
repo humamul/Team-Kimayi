@@ -19,17 +19,17 @@ $(document).ready(function(){
 
 let button = document.querySelector("#forgotPassword>div:last-child>button");
 button.addEventListener("click",function(){
-    window.location.href="/Team-Kimayi/signupLoginPage/signup.html";
+    window.location.href="./signup.html";
 });
 
 let close = document.querySelector("#closeBtn");
 close.addEventListener("click",function(){
-    window.location.href="/Team-Kimayi/homepage/index.html";
+    window.location.href="../homepage/index.html";
 });
 
 let background = document.querySelector("#background");
 background.addEventListener("click",function(){
-    window.location.href="/Team-Kimayi/homepage/index.html";
+    window.location.href="../homepage/index.html";
 });
 
 let signupArr = JSON.parse(localStorage.getItem("signupArr"));
@@ -39,7 +39,7 @@ reset.addEventListener("click",function(){
     signupArr.forEach(el => {
         let email = document.querySelector("#email");
         if(email.value==el.email){
-            window.location.href="/Team-Kimayi/signupLoginPage/account.html";
+            window.location.href="./account.html";
         }else{
             alert("Please enter valid email!");
             window.location.reload();
