@@ -85,10 +85,13 @@ var cartArr=JSON.parse(localStorage.getItem("cart"))||[];
 var btn=document.querySelector("#cartBtn");
 btn.addEventListener("click",btnfun)
 function btnfun()
-{
+{     
+      console.log(q-1)
       cartArr.push(product)
       console.log(cartArr);
       localStorage.setItem("cart",JSON.stringify(cartArr))
+    
+      
 }
 
 // humam edit
