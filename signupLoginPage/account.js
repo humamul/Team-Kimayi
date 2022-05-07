@@ -17,12 +17,12 @@ login.addEventListener("click",function(){
         let email = document.querySelector("#email");
         let otp = document.querySelector("#otp");
 
-        if(otp.value==8520&&email.value==el.email) window.location.href="/Team-Kimayi/homepage/index.html";
+        if(otp.value==8520&&email.value==el.email) window.location.href="../homepage/index.html";
         else alert("Please enter a valid otp.");
     });
 });
 
 let register = document.querySelector("#accRegister");
 register.addEventListener("click",function(){
-    window.location.href="/Team-Kimayi/signupLoginPage/signup.html";
+    window.location.href="./signup.html";
 });
