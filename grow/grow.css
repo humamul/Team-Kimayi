@@ -331,3 +331,71 @@ border-radius: 50%;
     font-size: large;
     font-weight: bold;
 }
+#blog1>div:nth-child(11)>div{
+    margin-top:-460px ;
+}
+#blog1>div:nth-child(9)>div{
+    margin-top:-500px ;
+}
+#blog1>div:nth-child(1)>div{
+    margin-top:-500px ;
+}
+#blog1>div:nth-child(2)>div{
+    margin-top:-500px ;
+}
+#blog1>div:nth-child(3)>div{
+    margin-top:-490px ;
+}
+ /* medium screens */
+@media all and (min-width: 200px) and (max-width: 750px) {
+
+    #blog1{
+
+        width:75%;
+        height: auto;
+        display: grid;
+        grid-template-columns: 80%;
+        grid-template-rows: repeat(12,570px);
+        gap:50px
+        }
+        #pc{
+            margin-left: 250px;
+        }
+
+        h4+div{
+            
+            margin-top: -520px;
+           
+        }
+       #blog1>div:nth-child(12)>div{
+           margin-top:-470px ;
+       }
+       #blog1>div:nth-child(11)>div{
+        margin-top:-460px ;
+    }
+    #blog1>div:nth-child(10)>div{
+        margin-top:-480px ;
+    }
+    
+    #blog1>div:nth-child(7)>div{
+        margin-top:-490px ;
+    }
+    #blog1>div:nth-child(4)>div{
+        margin-top:-490px ;
+    }
+    #blog1>div:nth-child(1)>div{
+        margin-top:-540px ;
+    }
+    #blog1>div:nth-child(2)>div{
+        margin-top:-530px ;
+    }
+    #header3{
+        display:flex;
+        display: block;
+        width: auto;
+    } 
+    #blog1{
+        width: 80%;
+    }
+   
+}
