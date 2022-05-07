@@ -64,6 +64,83 @@ button:hover{
 }
 
 
+/* Navbar */
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background-image: url("https://cdn.shopify.com/s/files/1/0449/5225/6667/files/gray_bg.jpg?v=1600154658");
+}
+#topInfo{
+    display: flex;
+    height: 30px;
+    background-color: #437111;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#nav{
+    height: 70px;
+    background-color: #eeeeea !important;
+    display: flex;
+    z-index: 1000;
+    position: sticky;
+    top: -0.5%;
+
+}
+#leftNav{
+    font-size: 17px;
+   
+}
+#leftNav>select{
+    margin-right: 15px;
+}
+#nav80{
+   width: 80%;
+   margin: auto;
+   display: flex;
+   justify-content: space-between;
+}
+#showNav{
+   width: 66px;
+   border: 0px;
+   border-radius: 5px;
+   background-color: #eeeeea!important;
+}
+#learnNav{
+width: 74px;
+   border: 0px;
+   border-radius: 5px;
+   background-color: #eeeeea!important;
+}
+#grow{
+    text-decoration: dashed;
+    color: black;
+    font-size: 15px;
+    
+}
+#logoNav{
+   width: 100px;
+   
+}
+#rightNav>a>img{
+   height: 20px;
+   margin-left: 14px;
+   border-radius: 15px;
+}
+#recommends{
+  
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: 'Oleo Script', cursive;
+}
+#recommends>h3>span>img{
+ width: 160px;
+ height: 40px
+}
+
+
 /* Signup Page */
 
 #signup>div:nth-child(1){
@@ -374,10 +451,183 @@ button:hover{
 }
 
 
-/* Forgot Password Subpage 1 */
+/* My Account Page */
 
-
-
-
-/* Forgot Password Subpage 1 */
-
+#account{
+    background-color: #437111;
+    text-align: center;
+    color: white;
+    padding-bottom: 1%;
+}
+#account>h1{
+    font-weight: 400;
+}
+#account>a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+#account>a:hover{
+    border-bottom: 1px solid white;
+}
+#account span{
+    color: white;
+}
+#para{
+    width: 80%;
+    margin: auto;
+    padding: 2%;
+    text-align: center;
+}
+#para>p{
+    font-size: 14px;
+    letter-spacing: .3px;
+    padding: 15px 25px;
+    background-color: #f9f9f9;
+    line-height: 1.8;
+    font-family: PT Sans, Arial, Helvetica, sans-serif;
+    color: #4c4c4c;
+}
+#details{
+    width: 80%;
+    margin: auto;
+    /* margin-top: 1%; */
+    display: flex;
+}
+#details>div{
+    width: 50%;
+    /* padding: 3%; */
+}
+#details>div:first-child{
+    border-right: 1px solid gray;
+    padding-left: 5%;
+    padding: 2%;
+    /* text-align: center; */
+}
+#details>div:first-child>div:nth-child(1){
+    color: #FFF;
+    border-color: #2d5073;
+    background-color: #3b5998;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+    width: 80%;
+    padding: 2%;
+}
+#details>div:first-child>div:nth-child(2){
+    color: #FFF;
+    border-color: #c23321;
+    background-color: #dd4b39;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 5%;                                                  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+    width: 80%;
+    padding: 2%;
+}
+#details h4{
+    font-size: 17px;
+    font-family: "Merriweather Sans", sans-serif;
+    color: white;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#details>div:first-child>:nth-child(3){
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+#details>div:first-child>:nth-child(3)>h2{
+    font-size: 34px;
+    font-family: PT Sans, 'MS Sans Serif', Geneva, sans-serif;
+    color: #1b1919;
+}
+#details>div:first-child>:nth-child(4){
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+#details>div:first-child>:nth-child(4)>label{
+    margin-top: 1%;
+}
+#details>div:first-child>:nth-child(4)>input{
+    margin-bottom: 5%;
+    padding: 2%;
+}
+#accLogin,#accRegister{
+    padding: 2%;
+    width: 50%;
+    margin: auto;
+    background-color: white;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#accLogin:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid whitesmoke;
+}
+#accRegister:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid whitesmoke;
+}
+#details>div:last-child{
+    text-align: center;
+    padding: 2%;
+}
+#footer{
+    padding-top: 20px; 
+    margin-top: 70px;
+     height: 270px;
+     background-color: #708949
+     
+ }
+ #footer>:first-child{
+     
+    width: 75%;
+     padding-right: 80px;
+     padding-bottom: 15px;
+     margin: auto;
+     margin-top: 10px;
+     display: flex;
+     justify-content: space-between;
+    border-bottom: 1px solid rgb(78, 72, 72)
+ }
+ #useless>div{
+     font-weight: bold;
+ }
+ #useless>div:hover{
+    cursor: pointer;
+    color: #b43238
+ }
+ #media>a>img:hover{
+    transition: transform .3s; 
+    transform: scale(1.1)
+     
+ }
+ #last{
+    border: px solid ;
+    width: 75%;
+    padding-right: 80px;
+    padding-bottom: 15px;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+     
+ }
+ #last>img{
+    margin-right: -59px;
+    width: 80px;
+ }

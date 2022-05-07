@@ -9,7 +9,7 @@ $(document).ready(function(){
 
 let button = document.querySelector("#login>div:last-child");
 button.addEventListener("click",function(){
-    window.location.href="signup.html";
+    window.location.href="/Team-Kimayi/signupLoginPage/signup.html";
 });
 
 let facebook = document.querySelector("#facebook");
