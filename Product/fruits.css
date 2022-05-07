@@ -1,3 +1,9 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-image: url("https://cdn.shopify.com/s/files/1/0449/5225/6667/files/gray_bg.jpg?v=1600154658");
+}
+
 #container{
     width:85%;
     margin:auto;
@@ -8,14 +14,145 @@
     grid-column-gap: 30px;
     grid-row-gap: 40px;
 }
-img{
+#navi{
+    width: 60%;
+    margin: auto;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    margin-top: -70px;
+    margin-bottom: 60px;
+}
+#chaman{
     border-radius: 20px;
+    height: 80%;
+    width: 100%;
+}
+/* img:hover{
+    transform: scale(1.1);
+    transition: transform .8s;
+} */
 
+#chaman:hover{
+    transform: scale(1.1);
+    transition: transform .8s;
 }
 h2,p{
     text-align: center;
 }
-img{
-    height: 80%;
-    width: 100%;
+
+/* footer */
+#footer{
+    padding-top: 20px; 
+    margin-top: 70px;
+     height: 220px;
+     background-color: #708949
+     
+ }
+ #footer>:first-child{
+     
+    width: 75%;
+     padding-right: 80px;
+     padding-bottom: 15px;
+     margin: auto;
+     margin-top: 10px;
+     display: flex;
+     justify-content: space-between;
+    border-bottom: 1px solid rgb(78, 72, 72)
+ }
+ #useless>div{
+     font-weight: bold;
+ }
+ #useless>div:hover{
+    cursor: pointer;
+    color: #b43238
+ }
+ #media>a>img:hover{
+    transition: transform .3s; 
+    transform: scale(1.1)
+     
+ }
+ #media{
+     display: flex;
+ }
+ #last{
+   border: px solid ;
+   width: 75%;
+     padding-right: 80px;
+     padding-bottom: 15px;
+     margin: auto;
+     margin-top: 10px;
+     display: flex;
+     justify-content: space-between;
+     
+ }
+ #last>img{
+     
+     margin-right: -59px;
+     width: 80px
+     
+ }
+ /* footer ENd */
+ /* nav humam css */
+ #topInfo{
+    display: flex;
+    height: 31px;
+    background-color: #437111;
+   justify-content: center;
+   align-items: center;
+    color: white;
+    position: sticky;
 }
+#nav{
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+    height: 50px;
+    background-color: #eeeeea!important;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: -0.5%;
+}
+#leftNav{
+    font-size: 17px;
+   
+}
+#leftNav>select{
+    margin-right: 15px;
+}
+#nav80{
+   width: 80%;
+   margin: auto;
+   display: flex;
+   justify-content: space-between;
+}
+#showNav{
+   width: 66px;
+   border: 0px;
+   border-radius: 5px;
+   background-color: #eeeeea!important;
+}
+#learnNav{
+width: 74px;
+   border: 0px;
+   border-radius: 5px;
+   background-color: #eeeeea!important;
+}
+#grow{
+    text-decoration: dashed;
+    color: black;
+    font-size: 15px;
+    
+}
+#logoNav{
+   width: 100px;
+   
+}
+#rightNav>a>img{
+   height: 20px;
+   margin-left: 14px;
+   border-radius: 15px;
+}
+/* end */
