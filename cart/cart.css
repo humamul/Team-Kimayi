@@ -194,9 +194,49 @@ background-color: #a7db6e;
     padding: 5px 32px 5px 5px;
 }
 #pic{
- width: 30%;
+ width: 100%;
  
 }
 #but{
   margin-top:70%
+}
+#pic2{
+    
+    width:150px;
+}
+@media all and (min-width: 400px) and (max-width: 750px) {
+    #cdiv2{
+        height: auto;
+       display: block;
+       }
+       #cdiv21{
+        height: auto;
+        width: 70%;
+        margin: auto;
+       }
+       #cdiv22{
+        height: auto;
+        width: 70%;
+        margin: auto;
+        }
+        #cdiv1{
+            margin-left:150px ;
+        }
+        #pic2{
+          
+            width:100px;
+        }
+        #pic{
+            width: 100%;
+            
+           }
+           table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 80%;
+            margin: auto;
+            margin-top: 50px;
+            text-align: center;
+            
+          }
 }
