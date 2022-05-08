@@ -653,7 +653,7 @@ width: 74px;
         width: 90%;
     }
     #details{
-        width: 90%;
+        width: 120%;
         flex-direction: column;
     }
     #details>div{
