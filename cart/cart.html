@@ -8,41 +8,43 @@
     <link rel="stylesheet" href="cfooter.css">
 </head>
 <body>
-    <div id="topInfo">Delivering in Mumbai and Delhi | Same day delivery!</div>
-    <div id="nav">
+     <!-- Navbar start -->
+ <div id="topInfo">Delivering in Mumbai and Delhi | Same day delivery!</div>
+ <div id="nav">
 
-        <div id="nav80">
-        <div id="leftNav">
-            <!-- <p>Grow <i class="arrow down"></i></p> -->
-            <select name="grow" id="showNav">
-                <option value="default">SHOP</option>
-                <option value="ALL FRUITS">ALL FRUITS</option>
-                <option value="FRUIT COMBOS">FRUIT COMBOS</option>
-                <option value="GIFTS BY KIMAYE">GIFTS BY KIMAYE</option>
-                <option value="GRAPE">GRAPE FAMILY BY KIMAYI</option>
-                <option value="RETURN & REPLACE">RETURN & REPLACEMENT</option>
-                <option value="COMMUNITY BUYING">COMMUNITY BUYING</option>
-            </select>
-           <select name="learn" id="learnNav">
-               <option value="defaule">LEARN</option>
-              <option value="OUR STORY">OUR STORY</option>
-              <option value="WHY KIMAYE">WHY KIMAYE</option>
-              <option value="TRACEABILITY">TRACEABILITY</option>
-              <option value="BEYOND FRUITS">BEYOND FRUITS</option>
-           </select>
-           <a href="grow.html" id="grow">GROW</a>
-        </div>
-        <div><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/website-logo_400x.png?v=1596288204" id="logoNav"></div>
-        <div id="rightNav">
-            <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/750px-Search_Icon.svg.png?20181016161702" alt=""></a>
+     <div id="nav80">
+     <div id="leftNav">
+         <!-- <p>Grow <i class="arrow down"></i></p> -->
+         <select name="grow" id="showNav" onchange="showFun()">
+             <option value="default">SHOP</option>
+             <option value="ALL FRUITS">ALL FRUITS</option>
+             <option value="FRUIT COMBOS">FRUIT COMBOS</option>
+             <option value="GIFTS BY KIMAYE">GIFTS BY KIMAYE</option>
+             <option value="GRAPE">GRAPE FAMILY BY KIMAYI</option>
+             <option value="RETURN & REPLACE">RETURN & REPLACEMENT</option>
+             <option value="COMMUNITY BUYING">COMMUNITY BUYING</option>
+         </select>
+        <select name="learn" id="learnNav" onchange="learnfun()">
+            <option value="defaule">LEARN</option>
+           <option value="OUR STORY">OUR STORY</option>
+           <option value="WHY KIMAYE">WHY KIMAYE</option>
+           <option value="TRACEABILITY">TRACEABILITY</option>
+           <option value="BEYOND FRUITS">BEYOND FRUITS</option>
+        </select>
+        <a href="/Team-Kimayi/grow/grow.html" id="grow">GROW</a>
+     </div>
+     <a href="/Team-Kimayi/homepage/index.html"><img src="https://cdn.shopify.com/s/files/1/0449/5225/6667/files/website-logo_400x.png?v=1596288204" id="logoNav"></a>
+     <div id="rightNav">
+         <a href=""><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/750px-Search_Icon.svg.png?20181016161702" alt=""></a>
 
-            <a href=""><img src="https://cutewallpaper.org/24/person-icon-png-transparent/120323315.jpg" alt=""></a>
+         <a href="/Team-Kimayi/signupLoginPage/login.html"><img src="https://cutewallpaper.org/24/person-icon-png-transparent/120323315.jpg" alt=""></a>
 
-            <a href=""><img src="https://i.pinimg.com/originals/95/67/ba/9567bac44b90867dc730858c2c528f01.jpg" alt="" id="cartImage"></a>
-        </div>
+         <a href="/Team-Kimayi/cart/cart.html"><img src="https://i.pinimg.com/originals/95/67/ba/9567bac44b90867dc730858c2c528f01.jpg" alt="" id="cartImage"></a>
+     </div>
 
-        </div>
-    </div>
+     </div>
+ </div>
+<!-- Navbar end -->
     <div id="cdiv">
             CART
     </div>
@@ -178,4 +180,51 @@
       localStorage.setItem("cart",JSON.stringify(out))
       window.location.reload()
     }
+        // nav
+function showFun(){
+    if(showNav.value == "ALL FRUITS"){
+        window.location = "/Team-Kimayi/Product/fruits.html";
+    }
+    if(showNav.value == "FRUIT COMBOS"){
+        window.location = "/Team-Kimayi/Product/fruits.html";
+    }
+    if(showNav.value == "GIFTS BY KIMAYE"){
+        window.location = "/Team-Kimayi/Product/fruits.html";
+    }
+    if(showNav.value == "GRAPE"){
+        window.location = "/Team-Kimayi/Product/fruits.html";
+    }
+    if(showNav.value == "RETURN & REPLACE"){
+        window.location = "https://kimaye.com/a/returns";
+    }
+    if(showNav.value == "COMMUNITY BUYING"){
+        window.location = "https://kimaye.com/pages/community-buying";
+    }
+}
+function learnfun(){
+console.log(learnNav.value)
+    if(learnNav.value == "OUR STORY")
+    window.location = "/Team-Kimayi/pages/ourstory.html"
+    if(learnNav.value == "WHY KIMAYE")
+    window.location = "/Team-Kimayi/pages/why kiyame.html"
+    if(learnNav.value == "TRACEABILITY")
+    window.location = "https://kimaye.com/pages/traceability"
+    if(learnNav.value == "BEYOND FRUITS")
+    window.location = "https://kimaye.com/pages/beyond-fruits"
+   
+}
+function allFruits(){
+    window.location = '/Team-Kimayi/Product/fruits.html'
+}
+function freshCuts(){
+    window.location = '/Team-Kimayi/Product/fruits.html'
+
+}
+function fruitCombos(){
+    window.location = '/Team-Kimayi/Product/fruits.html'
+}
+function gifts(){
+    window.location= '/Team-Kimayi/Product/fruits.html'
+}
+// nav end
 </script>
