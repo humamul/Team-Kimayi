@@ -13,13 +13,11 @@ body{
 }
 #nav{
     height: 50px;
-    background-color: #eeeeea!important;
+    background-color: #EEEEEA!important;
     display: flex;
-    
 }
 #leftNav{
     font-size: 17px;
-   
 }
 #leftNav>select{
     margin-right: 15px;
@@ -34,23 +32,21 @@ body{
    width: 66px;
    border: 0px;
    border-radius: 5px;
-   background-color: #eeeeea!important;
+   background-color: #EEEEEA!important;
 }
 #learnNav{
 width: 74px;
    border: 0px;
    border-radius: 5px;
-   background-color: #eeeeea!important;
+   background-color: #EEEEEA!important;
 }
 #grow{
     text-decoration: dashed;
     color: black;
     font-size: 15px;
-    
 }
 #logoNav{
    width: 100px;
-   
 }
 #rightNav>a>img{
    height: 20px;
@@ -74,23 +70,18 @@ table {
     margin: auto;
     margin-top: 50px;
     text-align: center;
-    
   }
-  
   table td,
   table th {
     background-image: url("https://cdn.shopify.com/s/files/1/0449/5225/6667/files/gray_bg.jpg?v=1600154658");
     padding: 8px;
     text-align: center;
-    border:1px solid #d6dfce;
+    border:1px solid #D6DFCE;
   }
- 
- 
   table th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-   
     color:black;
     text-align: center;
   }
@@ -101,23 +92,16 @@ table {
       margin-top: 30px;
      display: flex;
      background-color: white;
-      
-      
   }
   #cdiv21{
     height: 400px;
     width: 48%;
     margin: auto;
-   
-    
   }
    #cdiv22{
     height: 400px;
     width: 48%;
     margin: auto;
-    
-   
-
    }
    #cd{
        margin-top: 5px;
@@ -133,7 +117,6 @@ table {
      text-align: center;
  }
   #cdiv22>div{
-
     height: auto;
     width: 100%;
     margin-top: 20px;
@@ -142,7 +125,6 @@ table {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
   #cdiv22>div>div{
-
     height: 40px;
     width: 150px;
     display: flex;
@@ -152,12 +134,10 @@ table {
     font-weight: bold;
   }
   #pay{
-      
-background-color: #acd77e;
-
+background-color: #ACD77E;
 }
   #pay2{
-background-color: #a7db6e;
+background-color: #A7DB6E;
 }#pay>a{
     color: white;
     text-decoration: none;
@@ -180,31 +160,36 @@ background-color: #a7db6e;
     color: red;
 }
 #cdiv1{
-    height:150px ;
-    width: 12%;
+    width: 20%;
     margin: auto;
-    margin-top: 100px;
-    
+    margin-top: 50px;
+    /* border: 1px solid red; */
 }
 #b{
-    margin-bottom: 20px;
-    padding:5px 50px 5px 5px ;
+    padding:5px 0px 5px 5px ;
 }
 #d{
     padding: 5px 32px 5px 5px;
 }
 #pic{
  width: 100%;
- 
 }
 #but{
-  margin-top:70%
+ margin-top: 50%;
+ border: 3px solid green;
 }
 #pic2{
-    
     width:150px;
 }
-@media all and (min-width: 400px) and (max-width: 750px) {
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#a,#c{
+    text-align: center;
+}
+@media all and (min-width: 300px) and (max-width: 750px) {
     #cdiv2{
         height: auto;
        display: block;
@@ -220,15 +205,15 @@ background-color: #a7db6e;
         margin: auto;
         }
         #cdiv1{
-            margin-left:150px ;
+            width: 30%;
+            margin: auto;
+            margin-top: 50px;
         }
         #pic2{
-          
             width:100px;
         }
         #pic{
             width: 100%;
-            
            }
            table {
             font-family: Arial, Helvetica, sans-serif;
@@ -237,6 +222,138 @@ background-color: #a7db6e;
             margin: auto;
             margin-top: 50px;
             text-align: center;
-            
           }
+          #grid1{
+            width: 80%;
+            border: px solid;
+            margin: auto;
+            margin-bottom: 40px;
+             display: grid;
+             grid-template-columns: repeat(1,1fr);
+             /* gap: 44px; */
+             /* border: 1px solid; */
+             justify-content: center;
+         }
+    
+         /* grid 2 */
+         #bgGreen{
+           
+           /* background-image: url('https://cdn.shopify.com/s/files/1/0449/5225/6667/files/yellow_bg.jpg?v=1600154659'); */
+           background-size: cover;
+           height: 150%;
+           border: 1px solid rgb(245, 234, 234);
+           background-repeat: no-repeat;
+    
+        }
+        #grid2{
+            /* border: 1px solid red; */
+            width: 85%;
+            margin: auto;
+            margin-bottom: 40px;
+             display: block;
+            /* display: grid;
+            grid-template-columns: repeat(1,1fr);
+            gap: 40px; */
+        }
+       
+        #grid2img{
+            display: block;
+            /* border: 1px solid; */
+            width: 100%;
+            margin: auto;
+            /* width: 100% */
+            
+        }
+        #grid2info{
+            
+            /* border: 1px solid rgb(201, 116, 129); */
+            margin-top: 30px
+        }
+        #haha{
+            font-size: 13px;
+        }
+        #grid2info>div>h2{
+            font-size: 20px;
+        }
+        #grid2info>div>p{
+            font-size: 12px;
+        }
+       
+        #grid3{
+             width: 80%;
+             margin: auto;
+            margin-top: 70px;
+             display: grid;
+             grid-template-columns: repeat(2,1fr);
+             gap: 40px;
+         }
+         #last{
+             font-size: 10px;
+         }
+         #chotu{
+             
+             width: 200px;
+           padding-top: 10px;
+         }
+      
+         #footer>:first-child{
+             display: block;
+        }
+    
+            /* nav css */
+            #topInfo{
+                font-size: 10px;
+            }
+            #nav{
+                width: 100%;
+                text-align: center;
+                z-index: 1000;
+                height: auto;
+                background-color: #eeeeea!important;
+                display: flex;
+                justify-content: space-between;
+                position: sticky;
+                top: -0.5%;
+            }
+            #leftNav{
+                font-size: 12px;
+               display: none;
+            }
+            #leftNav>select{
+                margin-right: 15px;
+            }
+           #nav80{
+               width: 80%;
+               margin: auto;
+               display: flex;
+               justify-content: space-between;
+           }
+           #showNav{
+               width: 66px;
+               border: 0px;
+               border-radius: 5px;
+               background-color: #eeeeea!important;
+           }
+           #learnNav{
+            width: 74px;
+               border: 0px;
+               border-radius: 5px;
+               background-color: #eeeeea!important;
+           }
+           #grow{
+                text-decoration: dashed;
+                color: black;
+                font-size: 12px;
+                
+           }
+           #logoNav{
+               width: 100px;
+               
+           }
+           #rightNav>a>img{
+               height: 20px;
+               margin-left: 14px;
+               border-radius: 15px;
+           }
+           /* nav css end */
 }
