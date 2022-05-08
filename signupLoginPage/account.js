@@ -10,6 +10,11 @@ google.addEventListener("click",function(){
 
 let signupArr = JSON.parse(localStorage.getItem("signupArr"));
 
+let tempOtp = Math.floor(Math.random()*10)+""+Math.floor(Math.random()*10)+""+Math.floor(Math.random()*10)+""+Math.floor(Math.random()*10)+"";
+// console.log(tempOtp);
+let otpPara = document.querySelector("#para");
+otpPara.innerHTML = `<p>The otp for reset the password is ${tempOtp}. Kindly enter this otp and enjoy our services.</p>`;
+
 let login = document.querySelector("#accLogin");
 login.addEventListener("click",function(){
     
@@ -17,7 +22,7 @@ login.addEventListener("click",function(){
         let email = document.querySelector("#email");
         let otp = document.querySelector("#otp");
 
-        if(otp.value==8520&&email.value==el.email) window.location.href="../homepage/index.html";
+        if(otp.value==tempOtp&&email.value==el.email) window.location.href="../homepage/index.html";
         else alert("Please enter a valid otp.");
     });
 });
