@@ -98,47 +98,48 @@ function btnfun()
 
 // humam edit
 function showFun(){
-       if(showNav.value == "ALL FRUITS"){
-           window.location = "/Team-Kimayi/Product/fruits.html";
-       }
-       if(showNav.value == "FRUIT COMBOS"){
-           window.location = "HA2";
-       }
-       if(showNav.value == "GIFTS BY KIMAYE"){
-           window.location = "HA3";
-       }
-       if(showNav.value == "GRAPE"){
-           window.location = "HA4";
-       }
-       if(showNav.value == "RETURN & REPLACE"){
-           window.location = "HA5";
-       }
-       if(showNav.value == "COMMUNITY BUYING"){
-           window.location = "HA6";
-       }
-   }
-   function learnfun(){
+    if(showNav.value == "ALL FRUITS"){
+        window.location = "/Team-Kimayi/Product/fruits.html";
+    }
+    if(showNav.value == "FRUIT COMBOS"){
+        window.location = "/Team-Kimayi/Product/fruits.html";
+    }
+    if(showNav.value == "GIFTS BY KIMAYE"){
+        window.location = "/Team-Kimayi/Product/fruits.html";
+    }
+    if(showNav.value == "GRAPE"){
+        window.location = "/Team-Kimayi/Product/fruits.html";
+    }
+    if(showNav.value == "RETURN & REPLACE"){
+        window.location = "https://kimaye.com/a/returns";
+    }
+    if(showNav.value == "COMMUNITY BUYING"){
+        window.location = "https://kimaye.com/pages/community-buying";
+    }
+}
+function learnfun(){
 console.log(learnNav.value)
-       if(learnNav.value == "OUR STORY")
-       window.location = "/Team-Kimayi/pages/ourstory.html"
-       if(learnNav.value == "WHY KIMAYE")
-       window.location = "/Team-Kimayi/pages/why kiyame.html"
-       if(learnNav.value == "TRACEABILITY")
-       window.location = "hawai.com"
-       if(learnNav.value == "BEYOND FRUITS")
-       window.location = "hawai.com"
-      
-   }
-   function allFruits(){
-       window.location = '/Team-Kimayi/Product/fruits.html'
-   }
-   function freshCuts(){
-       window.location = 'jaja'
+    if(learnNav.value == "OUR STORY")
+    window.location = "/Team-Kimayi/pages/ourstory.html"
+    if(learnNav.value == "WHY KIMAYE")
+    window.location = "/Team-Kimayi/pages/why kiyame.html"
+    if(learnNav.value == "TRACEABILITY")
+    window.location = "https://kimaye.com/pages/traceability"
+    if(learnNav.value == "BEYOND FRUITS")
+    window.location = "https://kimaye.com/pages/beyond-fruits"
+   
+}
+function allFruits(){
+    window.location = '/Team-Kimayi/Product/fruits.html'
+}
+function freshCuts(){
+    window.location = '/Team-Kimayi/Product/fruits.html'
 
-   }
-   function fruitCombos(){
-       window.location = 'lala'
-   }
-   function gifts(){
-       window.location= 'kangan'
-   }
+}
+function fruitCombos(){
+    window.location = '/Team-Kimayi/Product/fruits.html'
+}
+function gifts(){
+    window.location= '/Team-Kimayi/Product/fruits.html'
+}
+// nav end
