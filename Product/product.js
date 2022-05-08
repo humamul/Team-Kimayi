@@ -88,8 +88,9 @@ function btnfun()
 {     
       console.log(q-1)
       cartArr.push(product)
-      console.log(cartArr);
+      
       localStorage.setItem("cart",JSON.stringify(cartArr))
+      alert("Added to Cart")
     
       
 }
