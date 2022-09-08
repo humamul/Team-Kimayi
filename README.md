@@ -26,6 +26,7 @@ Netlify link:- https://kimaye-masai.netlify.app.
 
 ![3](https://user-images.githubusercontent.com/31159055/189099655-bae689b6-a00b-4331-8d89-e5424eaf3393.png)
 
+- <b> PRODUCT PAGE</b>
 
 <img src="https://user-images.githubusercontent.com/31159055/189099702-77044ba7-cb35-448c-a26a-5f9b993a3c5b.png" height="500px" width="450px">
 
