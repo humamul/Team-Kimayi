@@ -7,7 +7,7 @@ Netlify link:- https://kimaye-masai.netlify.app.
 ## Features
 
 - Homepage with carousel feature:- Humam Ul Islam.
-- Signin & login page with random otp feature:- Harshal Pardeshi.
+- Signup & login page with random otp feature:- Harshal Pardeshi.
 - Cart page with adding and removing items:- Dilip Kumar.
 - Product page with sorting feature:- Rohit Mourya.
 - Grow page with description and search feature:- Prashant Kumar.
