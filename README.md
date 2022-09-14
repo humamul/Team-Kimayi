@@ -1,4 +1,4 @@
-# Kimaye Clone by Team-Kimayi
+# Kimaye Clone by Team-Kimaye
 
 Hello everyone we are a group of six peoples and we cloned a kimaye website by using HTML, CSS, JS.
 Netlify link:- https://kimaye-masai.netlify.app.
