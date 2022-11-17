@@ -42,4 +42,9 @@ Netlify link:- https://kimaye-masai.netlify.app.
 
 ## Feedback
 
-If you have any feedback, please reach out to us at pardeshiharshal90@gmail.com.
+If you have any feedback, please reach out to us at:
+1. humam.alam19@gmail.com
+2. pardeshiharshal90@gmail.com
+3. dilipKumar
+4. rohit
+5. prashant
