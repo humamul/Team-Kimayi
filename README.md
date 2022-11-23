@@ -7,7 +7,7 @@ Hello everyone we are a group of six peoples and we cloned a kimaye website by u
 ## Features
 
 - Homepage with carousel feature:- Humam Ul Islam.
-- Signup & login page with random otp feature:- Harshal Pardeshi.
+- Signup, login, forgot password and account pages with random otp feature:- Harshal Pardeshi.
 - Cart page with adding and removing items:- Dilip Kumar.
 - Product page with sorting feature:- Rohit Mourya.
 - Grow page with description and search feature:- Prashant Kumar.
