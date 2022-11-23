@@ -1,7 +1,7 @@
 # Kimaye Clone by Team-Kimaye
 
 Hello everyone we are a group of six peoples and we cloned a kimaye website by using HTML, CSS, JS.
-Netlify link:- https://kimaye-masai.netlify.app.
+- Netlify link:- https://kimaye-masai.netlify.app.
 
 
 ## Features
@@ -40,11 +40,23 @@ Netlify link:- https://kimaye-masai.netlify.app.
 ### 11. Why Kimaye Page
 ![Why Kimaye Page](./assets/whyKimayePage.png)
 
+
+## LinkedIn profiles
+
+- [Humam UI Islam](https://www.linkedin.com/in/humamul/)
+- [Harshal Pardeshi](https://www.linkedin.com/in/harshalpardeshi/)
+- [Dilip Kumar](https://www.linkedin.com/in/dilip-kumar1912/)
+- [Rohit Mourya](https://www.linkedin.com/in/rohit-mourya/)
+- [Prashant Kumar](https://www.linkedin.com/in/prashant-kumar-346037159/)
+- [Abhay Agarwal](https://www.linkedin.com/in/abhay-agrawal-120731178/)
+
+
 ## Feedback
 
 If you have any feedback, please reach out to us at:
-1. humam.alam19@gmail.com
-2. pardeshiharshal90@gmail.com
-3. dilipKumar
-4. rohit
-5. prashant
+- Humam UI Islam => humam.alam19@gmail.com
+- Harshal Pardeshi => pardeshiharshal90@gmail.com
+- Dilip Kumar => dilip19121998@gmail.com
+- Rohit Mourya => rohitmourya0012@gmail.com
+- Prashant Kumar => kumar.prashant477@gmail.com
+- Abhay Agarwal => abhaytalkin@gmail.com
